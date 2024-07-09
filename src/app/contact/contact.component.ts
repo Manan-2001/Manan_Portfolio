@@ -97,6 +97,7 @@ validate=true;
         subject: this.subject,
         message: this.msg
       });
+      this.clear();
     } else {
       console.log("One or more fields are invalid.");
     }

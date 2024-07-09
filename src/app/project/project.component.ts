@@ -16,6 +16,13 @@ export class ProjectComponent {
     @Inject(PLATFORM_ID) private platformId: object
   ) {}
 
+  EEApphref="/assets/SelfIntro/Expense_Manager_Application.html";
+  pgavhref="/assets/SelfIntro/PGAV_Rental_Sytem.html";
+  CMMhref="/assets/SelfIntro/Cafe_Mocha_Mania.html";
+  HPApphref="/assets/SelfIntro/Health_Plus_Application.html";
+  EMRApihref="/assets/SelfIntro/EmployeeManagement_RestFull_API.html";
+  SARShref="/assets/SelfIntro/Sports Activity Recognition System.html";
+
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       const aboutMeContainer = this.elementRef.nativeElement.querySelector('#about-me-container');
