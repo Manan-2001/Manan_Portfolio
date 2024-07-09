@@ -2,6 +2,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import { Console } from 'node:console';
 @Component({
     selector: 'app-contact',
     standalone: true,
@@ -43,7 +44,7 @@ export class ContactComponent {
 
 
 name="";
-email="";
+senderemail="";
 subject="";
 msg="";
 validatename=true;
@@ -52,7 +53,8 @@ validatemsg=true;
 validatesubject=true;
 validate=true;
 
-async send(){
+
+
   // emailjs.init('9ODSSIXdXnjLwqRD7');
   // let response= emailjs.send("service_ev0mglf","template_m36qw5u",{
   //   from_name: this.name,
@@ -62,32 +64,46 @@ async send(){
   //   message: this.msg
   //   });
 
-  this.validateemail=true;
-  this.validatemsg=true;
-  this.validatename=true;
-  this.validatesubject=true;
+  async send() {
+    this.validateemail = true;
+    this.validatemsg = true;
+    this.validatename = true;
+    this.validatesubject = true;
+    this.validate = true;
   
-   if(this.name ==""){
-    this.validatename=false;
-    this.validate=false;
+    if (this.name === "") {
+      this.validatename = false;
     }
-    if(this.email ==""){
-      this.validateemail=false;
-    this.validate=false;
-      }
-      if(this.subject ==""){
-        this.validatesubject=false;
-    this.validate=false;
-   }
-   if(this.msg ==""){
-    this.validatemsg=false;
-    this.validate=false;
-   }
- 
-}
+    if (this.senderemail === "") {
+      this.validateemail = false;
+    }
+    if (this.subject === "") {
+      this.validatesubject = false;
+    }
+    if (this.msg === "") {
+      this.validatemsg = false;
+    }
+  
+    if (this.validatename && this.validateemail && this.validatesubject && this.validatemsg) {
+      this.validate = true;
+      console.log("All fields are valid. Sending email...");
+  
+      // Email Js COnfiguration
+      emailjs.init('9ODSSIXdXnjLwqRD7');
+      let response = emailjs.send("service_ev0mglf", "template_m36qw5u", {
+        from_name: this.name,
+        to_name: "Manan Jain",
+        from_email: this.senderemail,
+        subject: this.subject,
+        message: this.msg
+      });
+    } else {
+      console.log("One or more fields are invalid.");
+    }
+  }
 clear(){
   this.name="";
-    this.email="";
+    this.senderemail="";
     this.subject="";
     this.msg="";
 }

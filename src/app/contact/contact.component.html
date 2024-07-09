@@ -127,7 +127,7 @@
             </div>
             
             <div class="user-box">
-              <input type="email" name="" required="@gmail.com">
+              <input type="email" name="email" required="^[a-zA-Z0-9._%+-]+@gmail\.com$" [(ngModel)]="senderemail">
               <label>Email <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validateemail==false"></i></label>
             </div>
             <div class="user-box">
