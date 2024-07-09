@@ -1,0 +1,58 @@
+
+h2{
+    text-align: center;
+    font-family: 'Baloo Paaji', cursive;
+    font-weight: bold;
+    color: rgb(212, 212, 212);
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    font-size: medium;
+    align-items: flex-start;
+    
+}
+button:hover{
+    background-color: linear-gradient(to right, black,white);
+}
+
+button{
+    font-size: 1vw;
+}
+@media (max-width:560px) {
+    h6{
+  
+      margin-top: 0;
+      font-family: 'Baloo Paaji', cursive;
+      font-weight: 580;
+      padding: 2%;
+    //   font-size:3vw;
+      text-align: center;
+  }
+  h2{ 
+    font-size: 3vw;
+  }
+  }
+h6{
+    // font-size: 2vw;
+    text-align: center;
+    font-family: 'Baloo Paaji', cursive;
+    color: rgb(190, 190, 190);
+}
+h2{
+    font-size: 2.5vw;
+}
+p{
+    font-size: 1.5vw;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-me-container {
+    opacity: 0; /* initial opacity */
+    transition: opacity 5s; /* transition duration */
+  }
+  
+  #about-me-container.fade-in {
+    opacity: 1; /* final opacity */
+  }

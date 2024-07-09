@@ -1,0 +1,28 @@
+<div class="login-box">
+    <h2>Contact Me <span data-bs-dismiss="modal"><i class="fa fa-close" style="color: red;float: right;"></i></span></h2> 
+    <form>
+      <div class="user-box">
+        <input type="text" name="name" required="" [(ngModel)]="name">
+        <label>Name <span style="color: red;">*</span></label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="" required="@gmail.com">
+        <label>Email <span style="color: red;">*</span></label>
+      </div>
+      <div class="user-box">
+        <textarea  name="subject" required="" rows="3" cols="10" [(ngModel)]="subject"></textarea>
+        <label>Subject <span style="color: red;">*</span></label>
+      </div>
+      <div class="user-box">
+        <textarea  name="subject" required="" rows="6" cols="15" [(ngModel)]="msg"></textarea>
+        <label>Message <span style="color: red;">*</span></label>
+      </div>
+      <a style="cursor:pointer;" (click)="send()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
+  </div>

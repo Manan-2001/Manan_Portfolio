@@ -1,0 +1,157 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg">
+        <p style="color: rgb(190, 190, 190)">How to contact me?</p>
+        <h2>CONTACT ME</h2>
+        <hr
+          style="
+            margin-left: 36%;
+            justify-content: center;
+            border: 2pt rgb(0, 238, 255) solid;
+            width: 30%;
+          "
+        />
+      </div>
+    </div>
+    <div class="container" id="about-me-container">
+      <br />
+      <div class="row">
+        <div
+          class="col-lg-3"
+          style="align-items: center; justify-content: center"
+        >
+          <img src="assets/SelfIntro/Passport_size_Photo.jpg" height="250" />
+        </div>
+        <div class="col-lg-9">
+          <br />
+          <table class="fixed_headers">
+            <tbody>
+              <tr>
+                <td>
+                  <h6><i class="fa fa-drivers-license-o"></i></h6>
+                </td>
+                <td>
+                  <h6><span>Manan Rajendra Jain</span></h6>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h6><i class="fa fa-phone-square"></i></h6>
+                </td>
+                <td>
+                  <h6><span><a href="tel:8390596701">+91-8390596701</a> / <a href="tel:7972238734"> +91-7972238734</a></span></h6>
+                </td>
+              </tr>
+              <tr>
+                <td><h6><i class="fa fa-google-plus-square"></i></h6></td>
+                <td>
+                  <h6>
+                    <span
+                      ><a
+                        href="mailto:jainmanan03052001@gmail.com"
+                        target="_blank"
+                        >jainmanan03052001&#64;gmail.com</a
+                      ></span
+                    >
+                  </h6>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h6><i class="fa fa-home"></i></h6>
+                </td>
+                <td>
+                  <h6>
+                    <span
+                      >Ramna Maruti Nagar, Nandanvan, Nagpur, India - 440024</span
+                    >
+                  </h6>
+                </td>
+              </tr>
+            
+              <!--   <tr>
+                <td><h6><i class="fa fa-linkedin-square"></i></h6></td>
+                <td>
+                  <h6>
+                    <span
+                      ><a
+                        href="https://www.linkedin.com/in/manan-jain03/"
+                        target="_blank"
+                        >www.linkedin.com/in/manan-jain03/</a
+                      ></span
+                    >
+                  </h6>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+  
+          <h6  >
+            <a href="https://www.linkedin.com/in/manan-jain03/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Linkdin"
+              ><i class="fa fa-linkedin-square i"></i></a> <a style="margin-left: 1%;" target="_blank" href="https://github.com/Manan-2001" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github"><i class="fa fa-github-square i"></i></a>
+              <a style="margin-left: 1%;" target="_blank" href="https://www.hackerrank.com/profile/jainmanan0305201" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hacker Rank" ><i class="fa fa-h-square i"></i></a>
+          </h6>
+         
+          <a href="/assets/SelfIntro/Resume.pdf" target="_blank"
+            ><button class="btn ">
+              Download Resume/CV
+            </button></a
+          >
+          
+            <button class="btn contactbtn" data-bs-toggle="modal" data-bs-target="#myModal" style="margin-left: 2%;">
+             Contact Me
+            </button>
+        </div>
+      </div>
+      <br />
+    </div>
+    <br />
+  </div>
+  
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog login-box">
+      <div class="modal-content " style="background-color: transparent;border: none;">
+  
+        <!-- Modal Header -->
+        
+          <h2 >Contact Me <a data-bs-dismiss="modal"><i class="fa fa-close" id="cross"></i></a></h2> 
+          
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="user-box" >
+              <input type="text" name="name" required="" [(ngModel)]="name">
+              <label>Name <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatename==false"></i></label>
+            </div>
+            
+            <div class="user-box">
+              <input type="email" name="" required="@gmail.com">
+              <label>Email <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validateemail==false"></i></label>
+            </div>
+            <div class="user-box">
+              <textarea  name="subject" required="" rows="3" cols="10" [(ngModel)]="subject"></textarea>
+              <label>Subject <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatesubject==false"></i></label>
+            </div>
+            <div class="user-box">
+              <textarea  name="subject" required="" rows="4" cols="15" [(ngModel)]="msg"></textarea>
+              <label>Message <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatemsg==false"></i></label>
+            </div> 
+            <a style="cursor:pointer;" (click)="send()" type="submit"  >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+            
+          </form>
+        </div>
+  
+     
+  
+      </div>
+    </div>
+  </div>
+

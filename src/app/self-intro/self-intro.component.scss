@@ -1,0 +1,40 @@
+
+.boxed {
+    border: 1px solid rgba(255, 255, 255, 0.712);
+    border-radius: 25px;
+    box-shadow: 6px 8px 8px rgba(149, 232, 247, 0.692);
+    font-family: 'Baloo Paaji', cursive;
+    font-weight:bolder;
+    background-color: rgb(226, 226, 226);
+ 
+}
+.textTyping{
+    margin-top: 8%;
+}
+@media (max-width:991px) {
+    .textTyping{
+        margin-top: 0;
+    }
+    .boxed{
+        background-color: rgba(255, 255, 255, 0.568);;
+    }
+}
+h3{
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.4vw;
+    text-shadow: 2px 2px 5px rgba(63, 63, 63, 0.3);
+}
+
+img{
+        max-width: 25vw;
+        max-height: 25vw;
+        border-radius: 25px;
+        box-shadow: 0px 4px 8px rgba(56, 56, 56, 0.692);
+        
+}
+span{
+    color: rgba(4, 151, 201, 0.836);
+    font-weight: bold;
+    text-shadow: 2px 3px 5px rgba(63, 63, 63, 0.3);
+}

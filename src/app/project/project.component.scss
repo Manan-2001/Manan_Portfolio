@@ -1,0 +1,230 @@
+h2 {
+    text-align: center;
+    font-family: "Baloo Paaji", cursive;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgb(212, 212, 212);
+  }
+  
+  
+  .cardBox {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px  rgba(190, 235, 243, 0.692);
+    
+  }
+  
+  #about-me-container {
+    opacity: 0; /* initial opacity */
+    transition: opacity 5s; /* transition duration */
+   }
+  
+  #about-me-container.fade-in {
+    opacity: 1; /* final opacity */
+  }
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 300px;  
+    
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+  
+    cursor: pointer;
+  
+  }
+  
+  .PGAV{
+    background-image:url('/assets/SelfIntro/PGAVFull.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+  }
+  .PGAV:hover{
+    background-image: none;
+     background-color: rgba(247, 246, 246, 0.932);
+  }
+  .Cafe{
+    background-image:url('/assets/SelfIntro/MochaManiaCafe.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+  }
+  .Cafe:hover{
+    background-image: none;
+    background-color: rgba(247, 246, 246, 0.932);
+    
+  }
+  .cardBox:hover{
+    
+    box-shadow: 8px 10px 12px rgba(159, 201, 197, 0.822);
+  }
+  @media (max-width:346px) {
+    *{
+      overflow: hidden;
+    }
+    .card{
+      margin-left: -5%;
+      height: 300px;
+   
+    }
+    .card img{
+      width: 100px;
+      height:550px;
+    }
+    
+   
+  }
+  
+  .card img {
+    
+    vertical-align: middle;
+    margin-top: 6%;
+  }
+  .p{
+    text-align: center;
+    font-family: "Baloo Paaji", cursive;
+    color: rgb(190, 190, 190);
+    font-size: 1rem;
+  }
+  .box>.cardBox>.card>.content>p{
+    text-align: justify;
+    font-family: "Baloo Paaji", cursive;
+    font-size: small;
+  }
+  .cardBox>.card>.content>p{
+    text-align: justify;
+    font-family: "Baloo Paaji", cursive;
+    font-size: small;
+  }
+  .margh5{
+  text-align: center;
+    color: whitesmoke;
+    margin-top: 2%;
+  }
+  .Health_PLUS{
+    background-image:url('/assets/SelfIntro/Health PLUS.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .Health_PLUS:hover{
+    background-image: none;
+    background-color: rgba(247, 246, 246, 0.932);
+  
+  }
+  .margh5Mocha{
+    margin-left: 15%;
+    text-shadow: 0.07rem 0.07rem rgb(207, 207, 207);
+    color: white;
+    margin-top: 2%;
+  }
+  @media (max-width:992px) {
+    
+    .marg{
+      margin-left: 0;
+    }
+    .margh5Mocha{
+      margin-left: 0;
+      margin-top: 2%;
+    }
+    .margh5{
+      margin-left: 0;
+      margin-top: 2%;
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+   h5{
+  
+          font-family: 'Baloo Paaji', cursive;
+          font-weight: 580;
+          padding: 2%;
+          // font-size: 1.5vw;
+          // text-align: center;
+          color: rgb(65, 65, 65);
+          font-size: 1rem;
+          text-shadow: 0.06rem 0.06rem #030303;
+          
+          
+  }
+  @media (max-width:560px) {
+    .card h5{
+  
+      margin-top: 0;
+      font-family: 'Baloo Paaji', cursive;
+      font-weight: 580;
+      padding: 2%;
+      font-size:3vw;
+      margin-left: 0;
+  }
+  
+  }
+  .card .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover{
+    
+    box-shadow: 0px 10px 12px rgba(20, 20, 20, 0.692);
+      
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+    
+  }
+  
+  .card:hover h5,
+  .card:hover img {
+    display: none;
+  }
+  h6{
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  .RestAPI{
+    
+    background-image:url('/assets/SelfIntro/EmployeeManagementRestAPI.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .RestAPI:hover{
+    background-image: none;  
+    background-color:  rgba(247, 246, 246, 0.932);
+  
+  }
+  .Sports{
+    background-image: url('/assets/SelfIntro/Sports Activity Recognition System.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .Sports:hover{
+    background-image: none;  
+    background-color: rgba(247, 246, 246, 0.932);
+  }
+  .Expense{
+    background-image: url('/assets/SelfIntro/ExpenseManager.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .Expense:hover{
+    background-image: none;  
+    background-color: rgba(247, 246, 246, 0.932);
+  }
+  .bg{
+    background-color:  linear-gradient(45deg, rgb(212, 244, 255), rgb(43, 42, 42));
+    box-shadow: 0 8px 12px 8px  rgba(130, 130, 131, 0.637);
+    border-radius: 15px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
