@@ -1,14 +1,15 @@
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
+  vidStarPGAV=false;
   private scrollHandler!: () => void;
 
   constructor(
@@ -41,5 +42,11 @@ export class ProjectComponent {
     if (isPlatformBrowser(this.platformId) && this.scrollHandler) {
       window.removeEventListener('scroll', this.scrollHandler);
     }
+  }
+  startVideoPGAV(){
+    this.vidStarPGAV=true;
+  }
+  stopVideoPGAV(){
+    this.vidStarPGAV=false;
   }
 }
