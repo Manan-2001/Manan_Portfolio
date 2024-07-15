@@ -1,15 +1,15 @@
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-pgav-rental-system',
+  selector: 'app-cafe-mocha-mania',
   standalone: true,
-  imports: [CommonModule,RouterOutlet, RouterModule],
-  templateUrl: './pgav-rental-system.component.html',
-  styleUrl: './pgav-rental-system.component.scss'
+  imports: [RouterOutlet, RouterModule],
+  templateUrl: './cafe-mocha-mania.component.html',
+  styleUrl: './cafe-mocha-mania.component.scss'
 })
-export class PGAVRentalSystemComponent {
+export class CafeMochaManiaComponent {
   private observer!: IntersectionObserver;
 
   constructor(private el: ElementRef, private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: object) {}

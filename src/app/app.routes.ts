@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { PGAVRentalSystemComponent } from './pgav-rental-system/pgav-rental-system.component';
+import { CafeMochaManiaComponent } from './cafe-mocha-mania/cafe-mocha-mania.component';
 
 export const routes: Routes = [
     {
@@ -12,5 +13,9 @@ export const routes: Routes = [
         path:"PGAV_Project",
         component:PGAVRentalSystemComponent
     },
+    {
+        path:"Cafe_Mocha_Mania",
+        component:CafeMochaManiaComponent
+    }
     
 ];
