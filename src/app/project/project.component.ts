@@ -9,7 +9,6 @@ import { Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  vidStarPGAV=false;
   private scrollHandler!: () => void;
 
   constructor(
@@ -43,10 +42,5 @@ export class ProjectComponent {
       window.removeEventListener('scroll', this.scrollHandler);
     }
   }
-  startVideoPGAV(){
-    this.vidStarPGAV=true;
-  }
-  stopVideoPGAV(){
-    this.vidStarPGAV=false;
-  }
+ 
 }
