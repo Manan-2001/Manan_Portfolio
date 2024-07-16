@@ -77,23 +77,7 @@ p {
   font-size: 1.5vw;
 }
 
-.btn1{
-  background-color: none;
-  border-radius: 5px;
-  color: #03e9f4;
-  border: 1px solid #03e9f4;
-  box-shadow:  2px 2px #03e9f4;
-  font-size: 1.2vw;
-  font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.btn1:hover{
-  background-color: #98faffd5;
-  color: black;
-  box-shadow:  4px 4px #03e9f4;
-  i{
-    color: black;
-  }}
+
 @media (max-width: 560px) {
   .card h5 {
     margin-top: 0;
@@ -137,9 +121,6 @@ h2 {
 }
 h6{
   font-size: 6vw;
-}
-.btn1{
-  font-size: 4vw;
 }
 .p{
   font-size: 5vw;
