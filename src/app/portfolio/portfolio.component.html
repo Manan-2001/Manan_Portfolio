@@ -1,542 +1,556 @@
 <style>
-  .btn1{
-  background-color: none;
-  border-radius: 5px;
-  color: #03e9f4;
-  border: 1px solid #03e9f4;
-  box-shadow:  2px 2px #03e9f4;
-  font-size: 1.2vw;
-  font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.btn1:hover{
-  background-color: #98faffd5;
-  color: black;
-  box-shadow:  4px 4px #03e9f4;
-  i{
+  .btn {
+    border-radius: 5px;
     color: black;
-  }}
-  .card img {
-  vertical-align: middle;
-  margin-top: 6%;
-}
-p {
-  text-align: center;
-  font-family: "Baloo Paaji", cursive;
-}
-.card h5 {
-  margin-top: 5%;
-  font-family: "Baloo Paaji", cursive;
-  font-weight: 580;
-  padding: 2%;
-  font-size: 1.5vw;
-}
+    border-left: 2px dashed #03a8f4;
+    border-top: 2px dashed #03a8f4;
+    box-shadow: 2px 2px #03a8f4;
+    font-weight: bold;
+  }
 
+  .btn:hover {
+    background-color: #03d0f4;
+    box-shadow: 4px 4px #03a8f4;
+    border: none;
+    font-weight: bolder;
+    color: black;
+  }
+  .card img {
+    vertical-align: middle;
+    margin-top: 6%;
+  }
+  p {
+    text-align: center;
+    font-family: "Baloo Paaji", cursive;
+  }
 </style>
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg">
-        <h6 style="color: rgb(190, 190, 190)">What I did?</h6>
-        <h2>PORTFOLIO</h2>
-        <hr
-          style="
-            margin-left: 36%;
-            justify-content: center;
-            border: 2pt rgb(0, 238, 255) solid;
-            width: 30%;
-          "
-        />
-      </div>
+  <div class="row">
+    <div class="col-lg">
+      <h6 style="color: rgb(190, 190, 190)">What I did?</h6>
+      <h2>PORTFOLIO</h2>
+      <hr
+        style="
+          margin-left: 36%;
+          justify-content: center;
+          border: 2pt rgb(0, 238, 255) solid;
+          width: 30%;
+        "
+      />
     </div>
-    <div class="container" id="accordion">
-      <div class="row" id="about-me-container">
-        <div class="col-lg col-sm col-md">
-          <div class="cardBox">
-            <div class="card">
-              <img
-                src="assets/SelfIntro/frontendDeveloper.gif"
-                height="130px"
-                alt="Avatar"
-              />
-  
-              <h5>
-                Front End Developer<br /><br /><span
-                  style="
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  "
-                >
-                  PROJECTS</span
-                >
-              </h5>
-              <div class="content">
-                <h6>Front End Developer</h6>
-                <p style="text-align: justify" class="p">
-                  I am a dynamic and detail-oriented
-                  <strong>Frontend Developer</strong> with extensive experience in
-                  creating interactive, user-friendly, and 
-                  ...
-                  <button
-                    class="btn btn1 btn-outline-primary"
+  </div>
+  <div class="container" id="accordion">
+    <div class="row" id="about-me-container">
+      <div class="col-lg col-sm col-md">
+        <div class="cardBox">
+          <div class="card">
+            <img
+              src="assets/SelfIntro/frontendDeveloper.gif"
+              height="130px"
+              alt="Avatar"
+            />
+
+            <h5 class="h5">
+              Front End Developer<br /><br /><span
+                style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                "
+              >
+                PROJECTS</span
+              >
+            </h5>
+            <div class="content">
+              <h6>Front End Developer</h6>
+              <p style="text-align: justify" class="p">
+                I am a dynamic and detail-oriented
+                <strong>Frontend Developer</strong> with extensive experience in
+                creating interactive, user-friendly, and feature-rich websites.
+                My expertise spans various projects, including the official
+                website of <strong>Shri Ramdeobaba University</strong>...
+                <a style="display: block; text-align: center"
+                  ><button
+                    class="btn btn-outline-primary"
                     style="font-size: small"
                     data-bs-toggle="collapse"
                     href="#frontD"
                     (click)="scrollTo('frontD')"
                   >
                     See More...
-                  </button>
-                </p>
-              </div>
+                  </button></a
+                >
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg col-sm col-md">
-          <div class="cardBox">
-            <div class="card">
-              <img src="/assets/SelfIntro/AngularDeveloper.gif" alt="Avatar" />
-              <h5 style="padding-top: 5%">
-                Angular Developer <br /><br /><span
-                  style="
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  "
+      </div>
+      <div class="col-lg col-sm col-md">
+        <div class="cardBox">
+          <div class="card">
+            <img src="/assets/SelfIntro/AngularDeveloper.gif" alt="Avatar" />
+            <h5 style="padding-top: 5%">
+              Angular Developer <br /><br /><span
+                style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                "
+              >
+                PROJECTS</span
+              >
+            </h5>
+            <div class="content">
+              <h6>Angular Developer<br /></h6>
+              <p style="text-align: justify" class="p">
+                I am a dynamic and detail-oriented
+        <strong>Angular Developer</strong> with extensive experience in creating
+        interactive, user-friendly, and feature-rich websites. My expertise
+        spans various projects, including the
+        <strong>PGAV Rental System</strong>...
+                <a style="display: block; text-align: center"
+                  ><button
+                  class="btn btn-outline-primary"
+                  style="font-size: small"
+                  data-bs-toggle="collapse"
+                  href="#AngularD"
+                  (click)="scrollTo('AngularD')"
                 >
-                  PROJECTS</span
-                >
-              </h5>
-              <div class="content">
-                <h6>Angular Developer<br /></h6>
-                <p style="text-align: justify" class="p">
-                  As a dedicated Angular Developer, I have extensive experience in
-                  building robust and scalable web applications. My projects...
-                  <button
-                    class="btn btn1 btn-outline-primary"
-                    style="font-size: small"
-                    data-bs-toggle="collapse"
-                    href="#AngularD"
-                    (click)="scrollTo('AngularD')"
-                  >
-                    See More...
-                  </button>
-                </p>
-              </div>
+                  See More...
+                </button></a>
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg col-sm col-md">
-          <div class="cardBox">
-            <div class="card">
-              <img src="assets/SelfIntro/AppDevelopment.gif" alt="Avatar" />
-              <h5>
-                Android App Developer <br /><br /><span
-                  style="
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  "
+      </div>
+      <div class="col-lg col-sm col-md">
+        <div class="cardBox">
+          <div class="card">
+            <img src="assets/SelfIntro/AppDevelopment.gif" alt="Avatar" />
+            <h5>
+              Android App Developer <br /><br /><span
+                style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                "
+              >
+                PROJECTS</span
+              >
+            </h5>
+            <div class="content">
+              <h6>Android App Developer<br /></h6>
+              <p style="text-align: justify" class="p">
+                As an <strong>Android Developer</strong>, I specialize in developing
+                robust and user-friendly applications. I have significant experience
+                with projects such as the
+                <strong>Health Care Android Application</strong> and the
+                <strong>Expense and Expenditure Application</strong>...
+                <a style="display: block; text-align: center"
+                  ><button
+                  class="btn btn-outline-primary"
+                  style="font-size: small"
+                  data-bs-toggle="collapse"
+                  href="#AndroidD"
+                  (click)="scrollTo('AndroidD')"
                 >
-                  PROJECTS</span
-                >
-              </h5>
-              <div class="content">
-                <h6>Android App Developer<br /></h6>
-                <p style="text-align: justify" class="p">
-                  As an <strong>Android Developer</strong>, I specialize in
-                  developing robust and user-friendly applications. I...
-                  <button
-                    class="btn btn1 btn-outline-primary"
-                    style="font-size: small"
-                    data-bs-toggle="collapse"
-                    href="#AndroidD"
-                    (click)="scrollTo('AndroidD')"
-                  >
-                    See More...
-                  </button>
-                </p>
-              </div>
+                  See More...
+                </button></a>
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg col-sm col-md">
-          <div class="cardBox">
-            <div class="card">
-              <img
-                src="assets/SelfIntro/JavaDeveloper.gif"
-                height="400px"
-                alt="Avatar"
-              />
-              <h5>
-                Java Developer <br /><br /><span
-                  style="
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  "
+      </div>
+      <div class="col-lg col-sm col-md">
+        <div class="cardBox">
+          <div class="card">
+            <img
+              src="assets/SelfIntro/JavaDeveloper.gif"
+              height="400px"
+              alt="Avatar"
+            />
+            <h5>
+              Java Developer <br /><br /><span
+                style="
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                "
+              >
+                PROJECTS</span
+              >
+            </h5>
+            <div class="content">
+              <h6>Java Developer<br /></h6>
+              <p style="text-align: justify" class="p">
+                As a <strong>Java Developer</strong>, I specialize in developing robust
+                and scalable applications. One of my notable projects is the
+                <strong>Employee Management Project</strong>: <br />I developed the
+                <strong>Employee Management Project</strong> as a
+                <strong>full-stack application</strong>...
+                <a style="display: block; text-align: center"
+                  ><button
+                  class="btn btn-outline-primary"
+                  style="font-size: small"
+                  data-bs-toggle="collapse"
+                  href="#JavaD"
+                  (click)="scrollTo('JavaD')"
                 >
-                  PROJECTS</span
-                >
-              </h5>
-              <div class="content">
-                <h6>Java Developer<br /></h6>
-                <p style="text-align: justify" class="p">
-                  As a <strong>Java Developer</strong>, I specialize in developing robust and scalable
-                  applications. One of my notable projects is the <strong>Employee Management
-                  Project</strong>: <br>I developed the....<button
-                    class="btn btn1  btn-outline-primary"
-                    style="font-size: small"
-                    data-bs-toggle="collapse"
-                    href="#JavaD"
-                    (click)="scrollTo('JavaD')"
-                  >
-                    See More...
-                  </button>
-                </p>
-              </div>
+                  See More...
+                </button></a>
+              </p>
             </div>
           </div>
-          <br />
-        </div>
-      </div>
-  
-      <!-- For frontend Devveloper -->
-      <div id="frontD" class="collapse" data-bs-parent="#accordion">
-        <br />
-        <h5>Front End Developer</h5>
-        <p style="color: whitesmoke" >
-          I am a dynamic and detail-oriented
-          <strong>Frontend Developer</strong> with extensive experience in
-          creating interactive, user-friendly, and feature-rich websites. My
-          expertise spans various projects, including the official website of
-          <strong>Shri Ramdeobaba University</strong>, where I utilized
-          <strong>HTML</strong>, <strong>CSS</strong>,
-          <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and
-          <strong>SQL</strong> to develop a responsive and visually appealing web
-          interface.<br />
-          Additionally, I designed and implemented the
-          <strong>PGAV Rental System's</strong> user-friendly interface using
-          <strong>Angular</strong>, <strong>HTML</strong>, <strong>CSS</strong>,
-          <strong>TypeScript</strong>,<strong>JavaScript</strong> and
-          <strong>Bootstrap</strong>, focusing on form validations and responsive
-          design. <br />My work on the <strong>Cafe Mocha Mania</strong> project
-          involved developing an engaging website with
-          <strong>JavaScript</strong>, <strong>HTML</strong>,
-          <strong>CSS</strong>, and <strong>Bootstrap</strong>, ensuring
-          consistent design, dynamic content loading, and performance
-          optimization. With a solid foundation in both theoretical and practical
-          aspects of web development, I am committed to continuously honing my
-          skills and staying updated with the latest industry trends. My diverse
-          project experience equips me to tackle complex challenges and deliver
-          exceptional results.
-        </p>
-        <h6>Tech Stack</h6>
-        <hr />
-        <div style="text-align: center">
-          <img
-            class="ng"
-            src="/assets/SelfIntro/angular.png"
-            height="50"
-            alt="Angular"
-          />
-          <img
-            class="bt"
-            src="/assets/SelfIntro/Bootstrap.svg"
-            height="50"
-            alt="Bootstrap"
-          />
-          <img
-            class="html"
-            src="/assets/SelfIntro/Html.webp"
-            height="50"
-            alt="HTML5"
-            style="background-color: white"
-          />
-          <img
-            class="css"
-            src="/assets/SelfIntro/CSS.webp"
-            height="50"
-            alt="CSS"
-            style="background-color: white"
-          />
-          <img
-            class="js"
-            src="/assets/SelfIntro/JS.png"
-            height="50"
-            alt="javaScript"
-          />
-          <img
-            class="ts"
-            src="/assets/SelfIntro/TS.png"
-            height="50"
-            alt="TypeScript"
-          />
-          <img
-            class="Trello content"
-            src="/assets/SelfIntro/Trello.png"
-            height="50"
-            alt="Trello"
-          />
-          <img
-            class="VSCode content"
-            src="/assets/SelfIntro/VSCode.jpg"
-            height="50"
-            alt="VS Code"
-          />
-          <img
-            class="github content"
-            src="/assets/SelfIntro/github.png"
-            height="50"
-            alt="Github"
-          />
-          <img
-            class="bitbucket content"
-            src="/assets/SelfIntro/bitbucket.jpg"
-            height="50"
-            alt="Bitbucket"
-          />
         </div>
         <br />
       </div>
-      <!-- For Angular Devveloper -->
-      <div id="AngularD" class="collapse" data-bs-parent="#accordion">
-        <br />
-        <h5>Angular Developer</h5>
-        <p style="color: whitesmoke" >
-          I am a dynamic and detail-oriented
-          <strong>Angular Developer</strong> with extensive experience in creating
-          interactive, user-friendly, and feature-rich websites. My expertise
-          spans various projects, including the
-          <strong>PGAV Rental System</strong>, where I designed and implemented a
-          user-friendly interface using <strong>Angular</strong>,
-          <strong>HTML</strong>, <strong>CSS</strong>,
-          <strong>TypeScript</strong>, <strong>Bootstrap</strong>,
-          <strong>routing</strong>, and <strong>Template Driven Forms</strong>.
-          This project focused on form validations and responsive design.
-          <br />Additionally, I developed the
-          <strong>Cafe Mocha Mania</strong> project, creating an engaging website
-          with <strong>JavaScript</strong>, <strong>HTML</strong>,
-          <strong>CSS</strong>, <strong>Bootstrap</strong>, and
-          <strong>Angular Components</strong>. I ensured consistent design,
-          dynamic content loading, and performance optimization throughout the
-          application. With a solid foundation in both theoretical and practical
-          aspects of web development, I am committed to continuously honing my
-          skills and staying updated with the latest industry trends. My diverse
-          project experience equips me to tackle complex challenges and deliver
-          exceptional results.
-        </p>
-        <h6>Tech Stack</h6>
-        <hr />
-        <div style="text-align: center">
-          <img
-            class="ng"
-            src="/assets/SelfIntro/angular.png"
-            height="50"
-            alt="Angular"
-          />
-          <img
-            class="bt"
-            src="/assets/SelfIntro/Bootstrap.svg"
-            height="50"
-            alt="Bootstrap"
-          />
-          <img
-            class="html"
-            src="/assets/SelfIntro/Html.webp"
-            height="50"
-            alt="HTML5"
-            style="background-color: white"
-          />
-          <img
-            class="css"
-            src="/assets/SelfIntro/CSS.webp"
-            height="50"
-            alt="CSS"
-            style="background-color: white"
-          />
-          <img
-            class="js"
-            src="/assets/SelfIntro/JS.png"
-            height="50"
-            alt="javaScript"
-          />
-          <img
-            class="ts"
-            src="/assets/SelfIntro/TS.png"
-            height="50"
-            alt="TypeScript"
-          />
-          <img
-            class="Trello content"
-            src="/assets/SelfIntro/Trello.png"
-            height="50"
-            alt="Trello"
-          />
-          <img
-            class="VSCode content"
-            src="/assets/SelfIntro/VSCode.jpg"
-            height="50"
-            alt="VS Code"
-          />
-          <img
-            class="github content"
-            src="/assets/SelfIntro/github.png"
-            height="50"
-            alt="Github"
-          />
-          <img
-            class="bitbucket content"
-            src="/assets/SelfIntro/bitbucket.jpg"
-            height="50"
-            alt="Bitbucket"
-          />
-        </div>
-        <br />
+    </div>
+
+    <!-- For frontend Devveloper -->
+    <div id="frontD" class="collapse" data-bs-parent="#accordion">
+      <br />
+      <h5>Front End Developer</h5>
+      <p style="color: whitesmoke">
+        I am a dynamic and detail-oriented
+        <strong>Frontend Developer</strong> with extensive experience in
+        creating interactive, user-friendly, and feature-rich websites. My
+        expertise spans various projects, including the official website of
+        <strong>Shri Ramdeobaba University</strong>, where I utilized
+        <strong>HTML</strong>, <strong>CSS</strong>,
+        <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and
+        <strong>SQL</strong> to develop a responsive and visually appealing web
+        interface.<br />
+        Additionally, I designed and implemented the
+        <strong>PGAV Rental System's</strong> user-friendly interface using
+        <strong>Angular</strong>, <strong>HTML</strong>, <strong>CSS</strong>,
+        <strong>TypeScript</strong>,<strong>JavaScript</strong> and
+        <strong>Bootstrap</strong>, focusing on form validations and responsive
+        design. <br />My work on the <strong>Cafe Mocha Mania</strong> project
+        involved developing an engaging website with
+        <strong>JavaScript</strong>, <strong>HTML</strong>,
+        <strong>CSS</strong>, and <strong>Bootstrap</strong>, ensuring
+        consistent design, dynamic content loading, and performance
+        optimization. With a solid foundation in both theoretical and practical
+        aspects of web development, I am committed to continuously honing my
+        skills and staying updated with the latest industry trends. My diverse
+        project experience equips me to tackle complex challenges and deliver
+        exceptional results.
+      </p>
+      <h6>Tech Stack</h6>
+      <hr />
+      <div style="text-align: center">
+        <img
+          class="ng"
+          src="/assets/SelfIntro/angular.png"
+          height="50"
+          alt="Angular"
+        />
+        <img
+          class="bt"
+          src="/assets/SelfIntro/Bootstrap.svg"
+          height="50"
+          alt="Bootstrap"
+        />
+        <img
+          class="html"
+          src="/assets/SelfIntro/Html.webp"
+          height="50"
+          alt="HTML5"
+          style="background-color: white"
+        />
+        <img
+          class="css"
+          src="/assets/SelfIntro/CSS.webp"
+          height="50"
+          alt="CSS"
+          style="background-color: white"
+        />
+        <img
+          class="js"
+          src="/assets/SelfIntro/JS.png"
+          height="50"
+          alt="javaScript"
+        />
+        <img
+          class="ts"
+          src="/assets/SelfIntro/TS.png"
+          height="50"
+          alt="TypeScript"
+        />
+        <img
+          class="Trello content"
+          src="/assets/SelfIntro/Trello.png"
+          height="50"
+          alt="Trello"
+        />
+        <img
+          class="VSCode content"
+          src="/assets/SelfIntro/VSCode.jpg"
+          height="50"
+          alt="VS Code"
+        />
+        <img
+          class="github content"
+          src="/assets/SelfIntro/github.png"
+          height="50"
+          alt="Github"
+        />
+        <img
+          class="bitbucket content"
+          src="/assets/SelfIntro/bitbucket.jpg"
+          height="50"
+          alt="Bitbucket"
+        />
       </div>
-      <!-- For Android Devveloper -->
-      <div id="AndroidD" class="collapse" data-bs-parent="#accordion">
-        <br />
-        <h5>Android Application Developer</h5>
-        <p style="color: whitesmoke" >
-          As an <strong>Android Developer</strong>, I specialize in developing
-          robust and user-friendly applications. I have significant experience
-          with projects such as the
-          <strong>Health Care Android Application</strong> and the
-          <strong>Expense and Expenditure Application</strong>: I developed the
-          <strong>Health Care Android Application</strong> using
-          <strong>Java</strong> and <strong>Android Studio</strong>, incorporating
-          <strong>Firebase</strong> for seamless user authentication and data
-          management. The app enables users to book doctor appointments, order lab
-          tests, and manage their health profiles through intuitive interfaces and
-          engaging <strong>Lottie Animations</strong>. Additionally, I created the
-          <strong>Expense and Expenditure Application</strong>, leveraging
-          <strong>Kotlin</strong> and <strong>Android Studio</strong>. This app
-          provides users with a straightforward interface to track expenses
-          efficiently. I integrated <strong>Firebase</strong> for secure
-          authentication and data storage, enhancing the user experience with
-          fluid <strong>Lottie Animations</strong>. My work reflects a deep
-          understanding of Android development principles, ensuring<strong>
-            high performance</strong
-          >, <strong>usability</strong>, and <strong>security</strong> in every
-          application I build.
-        </p>
-        <h6>Tech Stack</h6>
-        <hr />
-        <div style="text-align: center">
-          <img
-            class="java content"
-            src="/assets/SelfIntro/Java.svg"
-            height="50"
-            alt="Java"
-            style="background-color: white"
-          />
-          <img
-            class="AS content"
-            src="/assets/SelfIntro/AndoidStudio.webp"
-            height="50"
-            alt="Android Studio"
-          />
-          <img
-            class="firebase content"
-            src="/assets/SelfIntro/Firebase.png"
-            height="50"
-            alt="Firebase"
-          />
-          <img
-            class="github content"
-            src="/assets/SelfIntro/github.png"
-            height="50"
-            alt="Github"
-          />
-        </div>
-        <br />
+      <br />
+    </div>
+    <!-- For Angular Devveloper -->
+    <div id="AngularD" class="collapse" data-bs-parent="#accordion">
+      <br />
+      <h5>Angular Developer</h5>
+      <p style="color: whitesmoke">
+        I am a dynamic and detail-oriented
+        <strong>Angular Developer</strong> with extensive experience in creating
+        interactive, user-friendly, and feature-rich websites. My expertise
+        spans various projects, including the
+        <strong>PGAV Rental System</strong>, where I designed and implemented a
+        user-friendly interface using <strong>Angular</strong>,
+        <strong>HTML</strong>, <strong>CSS</strong>,
+        <strong>TypeScript</strong>, <strong>Bootstrap</strong>,
+        <strong>routing</strong>, and <strong>Template Driven Forms</strong>.
+        This project focused on form validations and responsive design.
+        <br />Additionally, I developed the
+        <strong>Cafe Mocha Mania</strong> project, creating an engaging website
+        with <strong>JavaScript</strong>, <strong>HTML</strong>,
+        <strong>CSS</strong>, <strong>Bootstrap</strong>, and
+        <strong>Angular Components</strong>. I ensured consistent design,
+        dynamic content loading, and performance optimization throughout the
+        application. With a solid foundation in both theoretical and practical
+        aspects of web development, I am committed to continuously honing my
+        skills and staying updated with the latest industry trends. My diverse
+        project experience equips me to tackle complex challenges and deliver
+        exceptional results.
+      </p>
+      <h6>Tech Stack</h6>
+      <hr />
+      <div style="text-align: center">
+        <img
+          class="ng"
+          src="/assets/SelfIntro/angular.png"
+          height="50"
+          alt="Angular"
+        />
+        <img
+          class="bt"
+          src="/assets/SelfIntro/Bootstrap.svg"
+          height="50"
+          alt="Bootstrap"
+        />
+        <img
+          class="html"
+          src="/assets/SelfIntro/Html.webp"
+          height="50"
+          alt="HTML5"
+          style="background-color: white"
+        />
+        <img
+          class="css"
+          src="/assets/SelfIntro/CSS.webp"
+          height="50"
+          alt="CSS"
+          style="background-color: white"
+        />
+        <img
+          class="js"
+          src="/assets/SelfIntro/JS.png"
+          height="50"
+          alt="javaScript"
+        />
+        <img
+          class="ts"
+          src="/assets/SelfIntro/TS.png"
+          height="50"
+          alt="TypeScript"
+        />
+        <img
+          class="Trello content"
+          src="/assets/SelfIntro/Trello.png"
+          height="50"
+          alt="Trello"
+        />
+        <img
+          class="VSCode content"
+          src="/assets/SelfIntro/VSCode.jpg"
+          height="50"
+          alt="VS Code"
+        />
+        <img
+          class="github content"
+          src="/assets/SelfIntro/github.png"
+          height="50"
+          alt="Github"
+        />
+        <img
+          class="bitbucket content"
+          src="/assets/SelfIntro/bitbucket.jpg"
+          height="50"
+          alt="Bitbucket"
+        />
       </div>
-      <!-- For Java Devveloper -->
-      <div id="JavaD" class="collapse" data-bs-parent="#accordion">
-        <br />
-        <h5>Java Developer</h5>
-       <p  style="text-align: justify;"> As a <strong>Java Developer</strong>, I specialize in developing robust and scalable
-        applications. One of my notable projects is the <strong>Employee Management
-        Project</strong>: <br>I developed the <strong>Employee Management Project</strong> as a <strong>full-stack
-        application</strong> using <strong>Spring Boot</strong> for the <strong>backend API</strong> and <strong>Java</strong> for application
-        logic. The frontend was implemented with <strong>Angular</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>TypeScript</strong>,
-        and <strong>Bootstrap</strong>, providing a responsive and user-friendly interface. I
-        utilized <strong>Postman</strong> for <strong>API testing</strong> and validation, ensuring smooth
-        integration and functionality across the application. <br>This project
-        showcased my proficiency in <strong>Java programming</strong>, <strong>Spring Boot framework</strong>, and
-        <strong>frontend technologies</strong>, highlighting my ability to deliver efficient and
-        comprehensive solutions for complex business requirements.</p>
-        <div style="text-align: center">
-          <img
+      <br />
+    </div>
+    <!-- For Android Devveloper -->
+    <div id="AndroidD" class="collapse" data-bs-parent="#accordion">
+      <br />
+      <h5>Android Application Developer</h5>
+      <p style="color: whitesmoke">
+        As an <strong>Android Developer</strong>, I specialize in developing
+        robust and user-friendly applications. I have significant experience
+        with projects such as the
+        <strong>Health Care Android Application</strong> and the
+        <strong>Expense and Expenditure Application</strong>: I developed the
+        <strong>Health Care Android Application</strong> using
+        <strong>Java</strong> and <strong>Android Studio</strong>, incorporating
+        <strong>Firebase</strong> for seamless user authentication and data
+        management. The app enables users to book doctor appointments, order lab
+        tests, and manage their health profiles through intuitive interfaces and
+        engaging <strong>Lottie Animations</strong>. Additionally, I created the
+        <strong>Expense and Expenditure Application</strong>, leveraging
+        <strong>Kotlin</strong> and <strong>Android Studio</strong>. This app
+        provides users with a straightforward interface to track expenses
+        efficiently. I integrated <strong>Firebase</strong> for secure
+        authentication and data storage, enhancing the user experience with
+        fluid <strong>Lottie Animations</strong>. My work reflects a deep
+        understanding of Android development principles, ensuring<strong>
+          high performance</strong
+        >, <strong>usability</strong>, and <strong>security</strong> in every
+        application I build.
+      </p>
+      <h6>Tech Stack</h6>
+      <hr />
+      <div style="text-align: center">
+        <img
           class="java content"
           src="/assets/SelfIntro/Java.svg"
           height="50"
           alt="Java"
-          style="background-color: white;"
+          style="background-color: white"
         />
         <img
-            class="sql content"
-            src="/assets/SelfIntro/SQL.png"
-            height="50"
-            alt="SQL"
-          />
-          <img
-            class="ng content"
-            src="/assets/SelfIntro/angular.png"
-            height="50"
-            alt="Angular"
-          />
-          <img
-            class="bt content"
-            src="/assets/SelfIntro/Bootstrap.svg"
-            height="50"
-            alt="Bootstrap"
-          />
-          <img
+          class="AS content"
+          src="/assets/SelfIntro/AndoidStudio.webp"
+          height="50"
+          alt="Android Studio"
+        />
+        <img
+          class="firebase content"
+          src="/assets/SelfIntro/Firebase.png"
+          height="50"
+          alt="Firebase"
+        />
+        <img
+          class="github content"
+          src="/assets/SelfIntro/github.png"
+          height="50"
+          alt="Github"
+        />
+      </div>
+      <br />
+    </div>
+    <!-- For Java Devveloper -->
+    <div id="JavaD" class="collapse" data-bs-parent="#accordion">
+      <br />
+      <h5>Java Developer</h5>
+      <p style="text-align: justify">
+        As a <strong>Java Developer</strong>, I specialize in developing robust
+        and scalable applications. One of my notable projects is the
+        <strong>Employee Management Project</strong>: <br />I developed the
+        <strong>Employee Management Project</strong> as a
+        <strong>full-stack application</strong> using
+        <strong>Spring Boot</strong> for the <strong>backend API</strong> and
+        <strong>Java</strong> for application logic. The frontend was
+        implemented with <strong>Angular</strong>, <strong>HTML</strong>,
+        <strong>CSS</strong>, <strong>TypeScript</strong>, and
+        <strong>Bootstrap</strong>, providing a responsive and user-friendly
+        interface. I utilized <strong>Postman</strong> for
+        <strong>API testing</strong> and validation, ensuring smooth integration
+        and functionality across the application. <br />This project showcased
+        my proficiency in <strong>Java programming</strong>,
+        <strong>Spring Boot framework</strong>, and
+        <strong>frontend technologies</strong>, highlighting my ability to
+        deliver efficient and comprehensive solutions for complex business
+        requirements.
+      </p>
+      <div style="text-align: center">
+        <img
+          class="java content"
+          src="/assets/SelfIntro/Java.svg"
+          height="50"
+          alt="Java"
+          style="background-color: white"
+        />
+        <img
+          class="sql content"
+          src="/assets/SelfIntro/SQL.png"
+          height="50"
+          alt="SQL"
+        />
+        <img
+          class="ng content"
+          src="/assets/SelfIntro/angular.png"
+          height="50"
+          alt="Angular"
+        />
+        <img
+          class="bt content"
+          src="/assets/SelfIntro/Bootstrap.svg"
+          height="50"
+          alt="Bootstrap"
+        />
+        <img
           class="html content"
           src="/assets/SelfIntro/Html.webp"
           height="50"
           alt="HTML5"
-          style="background-color: white;"
+          style="background-color: white"
         />
         <img
-        class="css content"
-        src="/assets/SelfIntro/CSS.webp"
-        height="50"
-        alt="CSS"
-        style="background-color: white;"
-      />
-      <img
-      class="spBoot content"
-      src="/assets/SelfIntro/SpringBoot.png"
-      height="50"
-      alt="Spring Boot"
-    />
-    <img
-      class="rp content"
-      src="/assets/SelfIntro/RestApi.jpg"
-      height="50"
-      alt="Rest API"
-    />
-    <img
-            class="psql content"
-            src="/assets/SelfIntro/PostgreSQL.png"
-            height="50"
-            alt="PostgreSQL"
-          />
-          <img
+          class="css content"
+          src="/assets/SelfIntro/CSS.webp"
+          height="50"
+          alt="CSS"
+          style="background-color: white"
+        />
+        <img
+          class="spBoot content"
+          src="/assets/SelfIntro/SpringBoot.png"
+          height="50"
+          alt="Spring Boot"
+        />
+        <img
+          class="rp content"
+          src="/assets/SelfIntro/RestApi.jpg"
+          height="50"
+          alt="Rest API"
+        />
+        <img
+          class="psql content"
+          src="/assets/SelfIntro/PostgreSQL.png"
+          height="50"
+          alt="PostgreSQL"
+        />
+        <img
           class="postman content"
           src="/assets/SelfIntro/Postman.webp"
           height="50"
           alt="Postman"
         />
         <img
-        class="intelije content"
-        src="/assets/SelfIntro/IntelijeIde.png"
-        height="50"
-        alt="Intelije IDE"
-      />
-      <img
+          class="intelije content"
+          src="/assets/SelfIntro/IntelijeIde.png"
+          height="50"
+          alt="Intelije IDE"
+        />
+        <img
           class="github content"
           src="/assets/SelfIntro/github.png"
           height="50"
           alt="Github"
         />
-        </div>
-        <br />
       </div>
+      <br />
     </div>
   </div>
-  
+</div>
