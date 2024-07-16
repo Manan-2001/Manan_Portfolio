@@ -7,7 +7,7 @@ h2 {
     color: rgb(212, 212, 212);
   }
   
-  p {
+  h6 {
     text-align: center;
     font-family: "Baloo Paaji", cursive;
   }
@@ -166,7 +166,6 @@ h2 {
     margin: 0.5em 0 0;
     font-family: "Source Sans Pro", serif;
   }
-
   .faPra {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 48px;
@@ -255,3 +254,50 @@ h2 {
   .float-right-to-left {
     animation: floatFromRight 1s ease-out;
   }
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h6{
+      font-size: 4vw;
+    }
+    .btn1{
+      font-size: 3vw;
+    }
+    .p{
+      font-size: 4vw;
+    }
+    i{
+      font-size: 5vw;
+    }
+    .projectParagraph{
+      font-size: 4vw;
+    }
+    .cbp_tmtimeline > li .cbp_tmlabel h3{
+      font-size: 4vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  .cbp_tmtimeline > li .cbp_tmlabel h3{
+    font-size: 5vw;
+  }
+  h6{
+    font-size: 6vw;
+  }
+  .btn1{
+    font-size: 4vw;
+  }
+  .p{
+    font-size: 5vw;
+  }
+  i{
+    font-size: 7vw;
+  }
+  .projectParagraph{
+    font-size: 5vw;
+  }
+}
