@@ -3,7 +3,7 @@
     border: 1px solid rgba(255, 255, 255, 0.712);
     border-radius: 25px;
     box-shadow: 6px 8px 8px rgba(149, 232, 247, 0.692);
-    font-family: 'Baloo Paaji', cursive;
+    font-family:  "Merienda", cursive;
     font-weight:bolder;
     background-color: rgb(226, 226, 226);
  
@@ -22,8 +22,13 @@
 h3{
     font-weight: 400;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3vw;
     text-shadow: 2px 2px 5px rgba(63, 63, 63, 0.3);
+}
+@media (max-width:991px) {
+    h3{
+        font-size: 4vw;
+    }
 }
 
 img{
