@@ -178,7 +178,11 @@ h2 {
   .sql:hover{
     box-shadow: 5px 6px 6px rgb(170, 170, 170);
   }
-  
+  h6{
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Baloo Paaji', cursive;
+  }
   @keyframes floatFromBottom {
     0% {
       transform: translateY(100%);
@@ -193,3 +197,39 @@ h2 {
   .float-bottom-to-top {
     animation: floatFromBottom 2s ease-out forwards;
   }
+
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h6{
+      font-size: 4vw;
+    }
+    .btn1{
+      font-size: 3vw;
+    }
+    .p{
+      font-size: 4vw;
+    }
+    i{
+      font-size: 5vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  h6{
+    font-size: 6vw;
+  }
+  .btn1{
+    font-size: 4vw;
+  }
+  .p{
+    font-size: 5vw;
+  }
+  i{
+    font-size: 7vw;
+  }
+}
