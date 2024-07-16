@@ -14,6 +14,9 @@ h2 {
   p:hover{
     color: #a7dfff;
   }
+  .cp{
+    font-size: 1.35vw;
+  }
   h4{
     font-weight: 700;
     font-size: 1.4vw;
@@ -21,7 +24,7 @@ h2 {
     color: white;
   }
 video{
-    width: 50%;
+    width: 90%;
   }
 
   .btn1{
@@ -43,7 +46,29 @@ video{
     }
 
   }
-
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    .btn1{
+      font-size: 3vw;
+    }
+    .cp{
+      font-size: 3vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  .btn1{
+    font-size: 4vw;
+  }
+  .cp{
+    font-size: 4vw;
+  }
+}
 
   @keyframes floatFromRight {
     0% {
