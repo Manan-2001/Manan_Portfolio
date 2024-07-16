@@ -25,9 +25,14 @@ h3{
     font-size: 3vw;
     text-shadow: 2px 2px 5px rgba(63, 63, 63, 0.3);
 }
-@media (max-width:991px) {
+@media (max-width:991px)and (min-width:600px) {
     h3{
         font-size: 4vw;
+    }
+}
+@media (max-width:600px) {
+    h3{
+        font-size: 5vw;
     }
 }
 
