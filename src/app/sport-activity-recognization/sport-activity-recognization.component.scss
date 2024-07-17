@@ -1,0 +1,159 @@
+h2 {
+    text-align: center;
+    font-family: "Baloo Paaji", cursive;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: rgb(212, 212, 212);
+  }
+  .p{
+    text-align: center;
+    font-family: "Baloo Paaji", cursive;
+    color: rgb(190, 190, 190);
+    font-size: 1.9vw;
+  }
+  p:hover{
+    color: #a7dfff;
+  }
+  .cp{
+    font-size: 1.35vw;
+  }
+  h4{
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    span{
+      font-size: 2vw;
+    }
+  }
+video{
+    width: 100%;
+  }
+
+  .btn1{
+    background-color: none;
+    border-radius: 5px;
+    color: #03e9f4;
+    border: 1px solid #03e9f4;
+    box-shadow:  2px 2px #03e9f4;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .btn1:hover{
+    background-color: #98faffd5;
+    color: black;
+    box-shadow:  4px 4px #03e9f4;
+    i{
+      color: black;
+    }
+
+  }
+
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h4{
+      font-size: 5vw;
+      span {
+        font-size: 4vw;
+      }
+    }
+    .btn1{
+      font-size: 3vw;
+      i{
+        font-size: 5vw;
+      }
+    }
+    .cp{
+      font-size: 4vw;
+    }
+    .p{
+      font-size: 4vw;
+    }
+    i{
+      font-size: 5vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  h4{
+    font-size: 10vw;
+    span{
+      font-size: 8vw;
+    }
+  }
+  .btn1{
+    font-size: 4vw;
+    i{
+      font-size: 7vw;
+    }
+  }
+  .cp{
+    font-size: 5vw;
+  }
+  .p{
+    font-size: 5vw;
+  }
+  i{
+    font-size: 7vw;
+  }
+}
+  @keyframes floatFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .float-right-to-left {
+    animation: floatFromRight 1s ease-out;
+  }
+  i{
+    color: white;
+    font-size: 1.8vw;
+    margin-left: 5px;
+    
+  }
+ 
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h4{
+      font-size: 5vw;
+    }
+    .btn1{
+      font-size: 3vw;
+    }
+    .cp{
+      font-size: 4vw;
+    }
+    .p{
+      font-size: 4vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  h4{
+    font-size: 10vw;
+  }
+  .btn1{
+    font-size: 4vw;
+  }
+  .cp{
+    font-size: 5vw;
+  }
+  .p{
+    font-size: 5vw;
+  }
+}
