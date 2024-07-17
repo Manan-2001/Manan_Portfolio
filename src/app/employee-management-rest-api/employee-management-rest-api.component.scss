@@ -19,7 +19,7 @@ h2 {
   }
   h4{
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     color: white;
   }
@@ -46,12 +46,14 @@ video{
     }
 
   }
+
   @media (max-width:991px)and (min-width:600px) {
     h2 {
       font-size: 5vw;
     }
     h4{
       font-size: 5vw;
+      
     }
     .btn1{
       font-size: 3vw;
@@ -72,10 +74,11 @@ video{
 @media (max-width:600px) {
   h2 {
    
-    font-size: 8vw;
+    font-size: 10vw;
   }
   h4{
-    font-size: 8vw;
+    font-size: 10vw;
+   
   }
   .btn1{
     font-size: 4vw;
@@ -93,7 +96,6 @@ video{
     font-size: 7vw;
   }
 }
-
   @keyframes floatFromRight {
     0% {
       transform: translateX(100%);
@@ -113,3 +115,38 @@ video{
     
   }
  
+  @media (max-width:991px)and (min-width:600px) {
+    h2 {
+      font-size: 5vw;
+    }
+    h4{
+      font-size: 5vw;
+    }
+    .btn1{
+      font-size: 3vw;
+    }
+    .cp{
+      font-size: 4vw;
+    }
+    .p{
+      font-size: 4vw;
+    }
+}
+@media (max-width:600px) {
+  h2 {
+   
+    font-size: 10vw;
+  }
+  h4{
+    font-size: 10vw;
+  }
+  .btn1{
+    font-size: 4vw;
+  }
+  .cp{
+    font-size: 5vw;
+  }
+  .p{
+    font-size: 5vw;
+  }
+}
