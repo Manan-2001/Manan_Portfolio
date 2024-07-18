@@ -181,3 +181,21 @@
     animation: btn-anim4 1s linear infinite;
     animation-delay: 0.75s;
   }
+  @keyframes floatFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .float-right-to-left {
+    animation: floatFromRight 1s ease-out;
+  }
+  i{
+    color: white;
+    font-size: 1.8vw;
+    margin-left: 5px;
+    
+  }

@@ -6,6 +6,7 @@ import { HealthPlusComponent } from './health-plus/health-plus.component';
 import { ExpenseAndExpenditureComponent } from './expense-and-expenditure/expense-and-expenditure.component';
 import { EmployeeManagementRestAPIComponent } from './employee-management-rest-api/employee-management-rest-api.component';
 import { SportActivityRecognizationComponent } from './sport-activity-recognization/sport-activity-recognization.component';
+import { HireFormComponent } from './hire-form/hire-form.component';
 
 export const routes: Routes = [
     {

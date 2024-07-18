@@ -1,14 +1,16 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import emailjs from '@emailjs/browser';
 import { Console } from 'node:console';
+import { HireFormComponent } from "../hire-form/hire-form.component";
 @Component({
     selector: 'app-contact',
     standalone: true,
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss',
-    imports: [FormsModule, CommonModule]
+    imports: [FormsModule, CommonModule, HireFormComponent]
 })
 export class ContactComponent {
   private scrollHandler!: (this: Window, ev: Event) => void;
@@ -107,6 +109,12 @@ clear(){
     this.senderemail="";
     this.subject="";
     this.msg="";
+}
+
+
+hireform=false;
+openhireform(){
+  this.hireform=true;
 }
 }
 

@@ -1,23 +1,23 @@
-<div class="login-box">
+<div class="login-box content">
     <h2>Contact Me <span data-bs-dismiss="modal"><i class="fa fa-close" style="color: red;float: right;"></i></span></h2> 
     <form>
       <div class="user-box">
         <input type="text" name="name" required="" [(ngModel)]="name">
-        <label>Name <span style="color: red;">*</span></label>
+        <label>Name <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatemsg==false"></i></label>
       </div>
       <div class="user-box">
-        <input type="email" name="" required="@gmail.com">
-        <label>Email <span style="color: red;">*</span></label>
+        <input type="email" name="" required="@gmail.com" [(ngModel)]="senderemail">
+        <label>Email <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatemsg==false"></i></label>
       </div>
       <div class="user-box">
         <textarea  name="subject" required="" rows="3" cols="10" [(ngModel)]="subject"></textarea>
-        <label>Subject <span style="color: red;">*</span></label>
+        <label>Subject <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatemsg==false"></i></label>
       </div>
       <div class="user-box">
-        <textarea  name="subject" required="" rows="6" cols="15" [(ngModel)]="msg"></textarea>
-        <label>Message <span style="color: red;">*</span></label>
+        <textarea  name="subject" required="" rows="4" cols="15" [(ngModel)]="msg"></textarea>
+        <label>Message <span style="color: red;">*</span> <i class="fa fa-exclamation-triangle" style="color: rgb(255, 128, 128); font-size: 18px;" *ngIf="validatemsg==false"></i></label>
       </div>
-      <a style="cursor:pointer;" (click)="send()">
+      <a style="cursor:pointer;" (click)="send()" >
         <span></span>
         <span></span>
         <span></span>

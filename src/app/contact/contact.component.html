@@ -13,7 +13,7 @@
         />
       </div>
     </div>
-    <div class="container" id="about-me-container">
+    <div class="container" id="about-me-container" *ngIf="hireform==false">
       <br />
       <div class="row">
         <div
@@ -98,7 +98,7 @@
             </button></a
           >
           
-            <button class="btn contactbtn" data-bs-toggle="modal" data-bs-target="#myModal" style="margin-left: 2%;">
+            <button class="btn contactbtn"  style="margin-left: 2%;" (click)="openhireform()">
              Contact Me
             </button>
         </div>
@@ -106,20 +106,22 @@
       <br />
     </div>
     <br />
+
+    <app-hire-form *ngIf="hireform==true"></app-hire-form>
   </div>
   
 
-  <div class="modal" id="myModal">
+  <!-- <div class="modal" id="myModal">
     <div class="modal-dialog login-box">
-      <div class="modal-content " style="background-color: transparent;border: none;">
+      <div class="modal-content " style="background-color: transparent;border: none;"> -->
   
         <!-- Modal Header -->
         
-          <h2 >Contact Me <a data-bs-dismiss="modal"><i class="fa fa-close" id="cross"></i></a></h2> 
+          <!-- <h2 >Contact Me <a data-bs-dismiss="modal"><i class="fa fa-close" id="cross"></i></a></h2>  -->
           
   
         <!-- Modal body -->
-        <div class="modal-body">
+        <!-- <div class="modal-body">
           <form>
             <div class="user-box" >
               <input type="text" name="name" required="" [(ngModel)]="name">
@@ -153,5 +155,5 @@
   
       </div>
     </div>
-  </div>
+  </div> -->
 

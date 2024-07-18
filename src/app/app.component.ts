@@ -7,14 +7,13 @@ import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { ProjectComponent } from "./project/project.component";
 import { ContactComponent } from "./contact/contact.component";
 import { SkillsComponent } from "./skills/skills.component";
-import { HireFormComponent } from "./hire-form/hire-form.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, SelfIntroComponent, AboutComponent, WorkexperienceComponent, PortfolioComponent, ProjectComponent, ContactComponent, SkillsComponent, HireFormComponent]
+    imports: [RouterOutlet, SelfIntroComponent, AboutComponent, WorkexperienceComponent, PortfolioComponent, ProjectComponent, ContactComponent, SkillsComponent]
 })
 export class AppComponent {
   title = 'Manan_portfolio';
