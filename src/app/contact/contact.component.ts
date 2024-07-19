@@ -112,9 +112,6 @@ clear(){
 }
 
 
-hireform=false;
-openhireform(){
-  this.hireform=true;
-}
+
 }
 
