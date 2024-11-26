@@ -47,9 +47,17 @@ h2 {
   }
   .ng{
     box-shadow: 3px 4px 4px rgba(255, 62, 62, 0.925);
+    margin-left: 5%;
   }
   .ng:hover{
     box-shadow: 5px 6px 6px  rgb(255, 29, 29);
+  }
+  .wix{
+    box-shadow: 3px 4px 4px rgba(153, 153, 153, 0.925);
+    
+  }
+  .wix:hover{
+    box-shadow: 5px 6px 6px  rgb(150, 150, 150);
   }
   .bt{
     box-shadow: 3px 4px 4px rgb(195, 0, 255);
@@ -74,9 +82,24 @@ h2 {
   }
   .spBoot{
     box-shadow: 3px 4px 4px rgb(39, 196, 0);
+    margin-left: 5%;
   }
   .spBoot:hover{
     box-shadow: 5px 6px 6px rgb(39, 196, 0);
+  }
+  .velo{
+    box-shadow: 3px 4px 4px rgb(20, 106, 235);
+    
+  }
+  .velo:hover{
+    box-shadow: 5px 6px 6px rgb(20, 106, 235);
+  }
+  .jira{
+    box-shadow: 3px 4px 4px rgb(20, 106, 235);
+    
+  }
+  .jira:hover{
+    box-shadow: 5px 6px 6px rgb(20, 106, 235);
   }
   .rp{
     box-shadow: 3px 4px 4px rgb(0, 67, 211);
@@ -111,6 +134,7 @@ h2 {
   .postman{
     box-shadow: 3px 4px 4px rgb(255, 94, 0);
     background-color: whitesmoke;
+    margin-left: 5%;
   }
   .postman:hover{
     box-shadow: 5px 6px 6px rgb(255, 94, 0);
