@@ -18,7 +18,7 @@ export class ChatBotComponent implements OnInit {
       script1.type = 'text/javascript';
       script1.text = `
         window.embeddedChatbotConfig = {
-          chatbotId: "oYbdZhnwIdtu8YpIeloOp",
+          chatbotId: "QbDUOQcg4X6OgDRRcOQHZ",
           domain: "www.chatbase.co"
         };
       `;
@@ -27,7 +27,7 @@ export class ChatBotComponent implements OnInit {
       // Add the Chatbase embed script
       const script2 = this.renderer.createElement('script');
       script2.src = 'https://www.chatbase.co/embed.min.js';
-      script2.setAttribute('chatbotId', 'oYbdZhnwIdtu8YpIeloOp');
+      script2.setAttribute('chatbotId', 'QbDUOQcg4X6OgDRRcOQHZ');
       script2.setAttribute('domain', 'www.chatbase.co');
       script2.defer = true;
       this.renderer.appendChild(document.body, script2);
