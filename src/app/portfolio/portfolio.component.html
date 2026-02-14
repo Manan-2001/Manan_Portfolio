@@ -1,207 +1,74 @@
-<style>
-  .btn {
-    border-radius: 5px;
-    color: black;
-    border-left: 2px dashed #03a8f4;
-    border-top: 2px dashed #03a8f4;
-    box-shadow: 2px 2px #03a8f4;
-    font-weight: bold;
-  }
+<section class="portfolio-section" id="portfolio">
 
-  .btn:hover {
-    background-color: #03d0f4;
-    box-shadow: 4px 4px #03a8f4;
-    border: none;
-    font-weight: bolder;
-    color: black;
-  }
-  .card img {
-    vertical-align: middle;
-    margin-top: 6%;
-  }
-  p {
-    text-align: center;
-    font-family: "Baloo Paaji", cursive;
-  }
-</style>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg">
-      <h6 style="color: rgb(190, 190, 190)">What I did?</h6>
-      <h2>PORTFOLIO</h2>
-      <hr
-        style="
-          margin-left: 36%;
-          justify-content: center;
-          border: 2pt rgb(0, 238, 255) solid;
-          width: 30%;
-        "
-      />
-    </div>
+  <div class="section-header">
+    <h6>What I did?</h6>
+    <h2>PORTFOLIO</h2>
+    <div class="line"></div>
   </div>
-  <div class="container" id="accordion">
-    <div class="row" id="about-me-container">
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card">
-            <img
-              src="assets/SelfIntro/frontendDeveloper.gif"
-              height="130px"
-              alt="Avatar"
-            />
 
-            <h5 class="h5">
-              Front End Developer<br /><br /><span
-                style="
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                "
-              >
-                PROJECTS</span
-              >
-            </h5>
-            <div class="content">
-              <h6>Front End Developer</h6>
-              <p style="text-align: justify" class="p">
-                I am a dynamic and detail-oriented
-                <strong>Frontend Developer</strong> with extensive experience in
-                creating interactive, user-friendly, and feature-rich websites.
-                My expertise spans various projects, including the official
-                website of <strong>Shri Ramdeobaba University</strong>...
-                <a style="display: block; text-align: center"
-                  ><button
-                    class="btn btn-outline-primary"
-                    style="font-size: small"
-                    data-bs-toggle="collapse"
-                    href="#frontD"
-                    (click)="scrollTo('frontD')"
-                  >
-                    See More...
-                  </button></a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card">
-            <img src="/assets/SelfIntro/AngularDeveloper.gif" alt="Avatar" />
-            <h5 style="padding-top: 5%">
-              Angular Developer <br /><br /><span
-                style="
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                "
-              >
-                PROJECTS</span
-              >
-            </h5>
-            <div class="content">
-              <h6>Angular Developer<br /></h6>
-              <p style="text-align: justify" class="p">
-                I am a dynamic and detail-oriented
-        <strong>Angular Developer</strong> with extensive experience in creating
-        interactive, user-friendly, and feature-rich websites. My expertise
-        spans various projects, including the
-        <strong>PGAV Rental System</strong>...
-                <a style="display: block; text-align: center"
-                  ><button
-                  class="btn btn-outline-primary"
-                  style="font-size: small"
-                  data-bs-toggle="collapse"
-                  href="#AngularD"
-                  (click)="scrollTo('AngularD')"
-                >
-                  See More...
-                </button></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card">
-            <img src="assets/SelfIntro/AppDevelopment.gif" alt="Avatar" />
-            <h5>
-              Android App Developer <br /><br /><span
-                style="
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                "
-              >
-                PROJECTS</span
-              >
-            </h5>
-            <div class="content">
-              <h6>Android App Developer<br /></h6>
-              <p style="text-align: justify" class="p">
-                As an <strong>Android Developer</strong>, I specialize in developing
-                robust and user-friendly applications. I have significant experience
-                with projects such as the
-                <strong>Health Care Android Application</strong> and the
-                <strong>Expense and Expenditure Application</strong>...
-                <a style="display: block; text-align: center"
-                  ><button
-                  class="btn btn-outline-primary"
-                  style="font-size: small"
-                  data-bs-toggle="collapse"
-                  href="#AndroidD"
-                  (click)="scrollTo('AndroidD')"
-                >
-                  See More...
-                </button></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card">
-            <img
-              src="assets/SelfIntro/JavaDeveloper.gif"
-              height="400px"
-              alt="Avatar"
-            />
-            <h5>
-              Java Developer <br /><br /><span
-                style="
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                "
-              >
-                PROJECTS</span
-              >
-            </h5>
-            <div class="content">
-              <h6>Java Developer<br /></h6>
-              <p style="text-align: justify" class="p">
-                As a <strong>Java Developer</strong>, I specialize in developing robust
-                and scalable applications. One of my notable projects is the
-                <strong>Employee Management Project</strong>: <br />I developed the
-                <strong>Employee Management Project</strong> as a
-                <strong>full-stack application</strong>...
-                <a style="display: block; text-align: center"
-                  ><button
-                  class="btn btn-outline-primary"
-                  style="font-size: small"
-                  data-bs-toggle="collapse"
-                  href="#JavaD"
-                  (click)="scrollTo('JavaD')"
-                >
-                  See More...
-                </button></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
+  <!-- Cards -->
+  <div class="portfolio-grid fade-in">
+
+    <!-- Frontend -->
+    <div class="p-card">
+      <img src="assets/SelfIntro/frontendDeveloper.gif" />
+      <h5>Frontend Developer</h5>
+      <p>Interactive, user-friendly & responsive web applications</p>
+      <button class="neo-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#frontD"
+        (click)="scrollTo('frontD')">
+        See More
+      </button>
     </div>
 
-    <!-- For frontend Devveloper -->
-    <div id="frontD" class="collapse" data-bs-parent="#accordion">
-      <br />
-      <h5>Front End Developer</h5>
+    <!-- Angular -->
+    <div class="p-card">
+      <img src="assets/SelfIntro/AngularDeveloper.gif" />
+      <h5>Angular Developer</h5>
+      <p>Scalable SPA apps with modern UI architecture</p>
+      <button class="neo-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#AngularD"
+        (click)="scrollTo('AngularD')">
+        See More
+      </button>
+    </div>
+
+    <!-- Android -->
+    <div class="p-card">
+      <img src="assets/SelfIntro/AppDevelopment.gif" />
+      <h5>Android Developer</h5>
+      <p>High performance Android applications</p>
+      <button class="neo-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#AndroidD"
+        (click)="scrollTo('AndroidD')">
+        See More
+      </button>
+    </div>
+
+    <!-- Java -->
+    <div class="p-card">
+      <img src="assets/SelfIntro/JavaDeveloper.gif" />
+      <h5>Java Developer</h5>
+      <p>Scalable backend systems & APIs</p>
+      <button class="neo-btn"
+        data-bs-toggle="collapse"
+        data-bs-target="#JavaD"
+        (click)="scrollTo('JavaD')">
+        See More
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ACCORDION -->
+  <div id="accordion">
+
+    <!-- Frontend -->
+    <div id="frontD" class="collapse p-detail" data-bs-parent="#accordion">
+       <h5>Front End Developer</h5>
       <p style="color: whitesmoke">
         I am a dynamic and detail-oriented
         <strong>Frontend Developer</strong> with extensive experience in
@@ -230,75 +97,23 @@
       </p>
       <h6>Tech Stack</h6>
       <hr />
-      <div style="text-align: center">
-        <img
-          class="ng"
-          src="/assets/SelfIntro/angular.png"
-          height="50"
-          alt="Angular"
-        />
-        <img
-          class="bt"
-          src="/assets/SelfIntro/Bootstrap.svg"
-          height="50"
-          alt="Bootstrap"
-        />
-        <img
-          class="html"
-          src="/assets/SelfIntro/Html.webp"
-          height="50"
-          alt="HTML5"
-          style="background-color: white"
-        />
-        <img
-          class="css"
-          src="/assets/SelfIntro/CSS.webp"
-          height="50"
-          alt="CSS"
-          style="background-color: white"
-        />
-        <img
-          class="js"
-          src="/assets/SelfIntro/JS.png"
-          height="50"
-          alt="javaScript"
-        />
-        <img
-          class="ts"
-          src="/assets/SelfIntro/TS.png"
-          height="50"
-          alt="TypeScript"
-        />
-        <img
-          class="Trello content"
-          src="/assets/SelfIntro/Trello.png"
-          height="50"
-          alt="Trello"
-        />
-        <img
-          class="VSCode content"
-          src="/assets/SelfIntro/VSCode.jpg"
-          height="50"
-          alt="VS Code"
-        />
-        <img
-          class="github content"
-          src="/assets/SelfIntro/github.png"
-          height="50"
-          alt="Github"
-        />
-        <img
-          class="bitbucket content"
-          src="/assets/SelfIntro/bitbucket.jpg"
-          height="50"
-          alt="Bitbucket"
-        />
+      <div class="tech-icons">
+        <img src="/assets/SelfIntro/angular.png" alt="Angular" />
+        <img src="/assets/SelfIntro/Bootstrap.svg" alt="Bootstrap" />
+        <img src="/assets/SelfIntro/Html.webp" alt="HTML5" />
+        <img src="/assets/SelfIntro/CSS.webp" alt="CSS" />
+        <img src="/assets/SelfIntro/JS.png" alt="JavaScript" />
+        <img src="/assets/SelfIntro/TS.png" alt="TypeScript" />
+        <img src="/assets/SelfIntro/Trello.png" alt="Trello" />
+        <img src="/assets/SelfIntro/VSCode.jpg" alt="VS Code" />
+        <img src="/assets/SelfIntro/github.png" alt="Github" />
+        <img src="/assets/SelfIntro/bitbucket.jpg" alt="Bitbucket" />
       </div>
-      <br />
+
     </div>
-    <!-- For Angular Devveloper -->
-    <div id="AngularD" class="collapse" data-bs-parent="#accordion">
-      <br />
+
+    <!-- Angular -->
+    <div id="AngularD" class="collapse p-detail" data-bs-parent="#accordion">
       <h5>Angular Developer</h5>
       <p style="color: whitesmoke">
         I am a dynamic and detail-oriented
@@ -325,75 +140,23 @@
       </p>
       <h6>Tech Stack</h6>
       <hr />
-      <div style="text-align: center">
-        <img
-          class="ng"
-          src="/assets/SelfIntro/angular.png"
-          height="50"
-          alt="Angular"
-        />
-        <img
-          class="bt"
-          src="/assets/SelfIntro/Bootstrap.svg"
-          height="50"
-          alt="Bootstrap"
-        />
-        <img
-          class="html"
-          src="/assets/SelfIntro/Html.webp"
-          height="50"
-          alt="HTML5"
-          style="background-color: white"
-        />
-        <img
-          class="css"
-          src="/assets/SelfIntro/CSS.webp"
-          height="50"
-          alt="CSS"
-          style="background-color: white"
-        />
-        <img
-          class="js"
-          src="/assets/SelfIntro/JS.png"
-          height="50"
-          alt="javaScript"
-        />
-        <img
-          class="ts"
-          src="/assets/SelfIntro/TS.png"
-          height="50"
-          alt="TypeScript"
-        />
-        <img
-          class="Trello content"
-          src="/assets/SelfIntro/Trello.png"
-          height="50"
-          alt="Trello"
-        />
-        <img
-          class="VSCode content"
-          src="/assets/SelfIntro/VSCode.jpg"
-          height="50"
-          alt="VS Code"
-        />
-        <img
-          class="github content"
-          src="/assets/SelfIntro/github.png"
-          height="50"
-          alt="Github"
-        />
-        <img
-          class="bitbucket content"
-          src="/assets/SelfIntro/bitbucket.jpg"
-          height="50"
-          alt="Bitbucket"
-        />
+       <div class="tech-icons">
+        <img src="/assets/SelfIntro/angular.png" alt="Angular" />
+        <img src="/assets/SelfIntro/Bootstrap.svg" alt="Bootstrap" />
+        <img src="/assets/SelfIntro/Html.webp" alt="HTML5" />
+        <img src="/assets/SelfIntro/CSS.webp" alt="CSS" />
+        <img src="/assets/SelfIntro/JS.png" alt="JavaScript" />
+        <img src="/assets/SelfIntro/TS.png" alt="TypeScript" />
+        <img src="/assets/SelfIntro/Trello.png" alt="Trello" />
+        <img src="/assets/SelfIntro/VSCode.jpg" alt="VS Code" />
+        <img src="/assets/SelfIntro/github.png" alt="Github" />
+        <img src="/assets/SelfIntro/bitbucket.jpg" alt="Bitbucket" />
       </div>
-      <br />
+
     </div>
-    <!-- For Android Devveloper -->
-    <div id="AndroidD" class="collapse" data-bs-parent="#accordion">
-      <br />
+
+    <!-- Android -->
+    <div id="AndroidD" class="collapse p-detail" data-bs-parent="#accordion">
       <h5>Android Application Developer</h5>
       <p style="color: whitesmoke">
         As an <strong>Android Developer</strong>, I specialize in developing
@@ -420,38 +183,16 @@
       </p>
       <h6>Tech Stack</h6>
       <hr />
-      <div style="text-align: center">
-        <img
-          class="java content"
-          src="/assets/SelfIntro/Java.svg"
-          height="50"
-          alt="Java"
-          style="background-color: white"
-        />
-        <img
-          class="AS content"
-          src="/assets/SelfIntro/AndoidStudio.webp"
-          height="50"
-          alt="Android Studio"
-        />
-        <img
-          class="firebase content"
-          src="/assets/SelfIntro/Firebase.png"
-          height="50"
-          alt="Firebase"
-        />
-        <img
-          class="github content"
-          src="/assets/SelfIntro/github.png"
-          height="50"
-          alt="Github"
-        />
+      <div class="tech-icons">
+        <img src="/assets/SelfIntro/Java.svg" alt="Java" />
+        <img src="/assets/SelfIntro/AndoidStudio.webp" alt="Android Studio" />
+        <img src="/assets/SelfIntro/Firebase.png" alt="Firebase" />
+        <img src="/assets/SelfIntro/github.png" alt="Github" />
       </div>
-      <br />
     </div>
-    <!-- For Java Devveloper -->
-    <div id="JavaD" class="collapse" data-bs-parent="#accordion">
-      <br />
+
+    <!-- Java -->
+    <div id="JavaD" class="collapse p-detail" data-bs-parent="#accordion">
       <h5>Java Developer</h5>
       <p style="text-align: justify">
         As a <strong>Java Developer</strong>, I specialize in developing robust
@@ -473,84 +214,22 @@
         deliver efficient and comprehensive solutions for complex business
         requirements.
       </p>
-      <div style="text-align: center">
-        <img
-          class="java content"
-          src="/assets/SelfIntro/Java.svg"
-          height="50"
-          alt="Java"
-          style="background-color: white"
-        />
-        <img
-          class="sql content"
-          src="/assets/SelfIntro/SQL.png"
-          height="50"
-          alt="SQL"
-        />
-        <img
-          class="ng content"
-          src="/assets/SelfIntro/angular.png"
-          height="50"
-          alt="Angular"
-        />
-        <img
-          class="bt content"
-          src="/assets/SelfIntro/Bootstrap.svg"
-          height="50"
-          alt="Bootstrap"
-        />
-        <img
-          class="html content"
-          src="/assets/SelfIntro/Html.webp"
-          height="50"
-          alt="HTML5"
-          style="background-color: white"
-        />
-        <img
-          class="css content"
-          src="/assets/SelfIntro/CSS.webp"
-          height="50"
-          alt="CSS"
-          style="background-color: white"
-        />
-        <img
-          class="spBoot content"
-          src="/assets/SelfIntro/SpringBoot.png"
-          height="50"
-          alt="Spring Boot"
-        />
-        <img
-          class="rp content"
-          src="/assets/SelfIntro/RestApi.jpg"
-          height="50"
-          alt="Rest API"
-        />
-        <img
-          class="psql content"
-          src="/assets/SelfIntro/PostgreSQL.png"
-          height="50"
-          alt="PostgreSQL"
-        />
-        <img
-          class="postman content"
-          src="/assets/SelfIntro/Postman.webp"
-          height="50"
-          alt="Postman"
-        />
-        <img
-          class="intelije content"
-          src="/assets/SelfIntro/IntelijeIde.png"
-          height="50"
-          alt="Intelije IDE"
-        />
-        <img
-          class="github content"
-          src="/assets/SelfIntro/github.png"
-          height="50"
-          alt="Github"
-        />
+      <div class="tech-icons">
+        <img src="/assets/SelfIntro/Java.svg" alt="Java" />
+        <img src="/assets/SelfIntro/SQL.png" alt="SQL" />
+        <img src="/assets/SelfIntro/angular.png" alt="Angular" />
+        <img src="/assets/SelfIntro/Bootstrap.svg" alt="Bootstrap" />
+        <img src="/assets/SelfIntro/Html.webp" alt="HTML5" />
+        <img src="/assets/SelfIntro/CSS.webp" alt="CSS" />
+        <img src="/assets/SelfIntro/SpringBoot.png" alt="Spring Boot" />
+        <img src="/assets/SelfIntro/RestApi.jpg" alt="Rest API" />
+        <img src="/assets/SelfIntro/PostgreSQL.png" alt="PostgreSQL" />
+        <img src="/assets/SelfIntro/Postman.webp" alt="Postman" />
+        <img src="/assets/SelfIntro/IntelijeIde.png" alt="Intelije IDE" />
+        <img src="/assets/SelfIntro/github.png" alt="Github" />
       </div>
-      <br />
     </div>
+
   </div>
-</div>
+
+</section>

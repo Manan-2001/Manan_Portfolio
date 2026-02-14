@@ -8,13 +8,14 @@ import { ProjectComponent } from "./project/project.component";
 import { ContactComponent } from "./contact/contact.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ChatBotComponent } from "./chat-bot/chat-bot.component";
+import { NavbarComponent } from "./navbar/navbar.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, SelfIntroComponent, AboutComponent, WorkexperienceComponent, PortfolioComponent, ProjectComponent, ContactComponent, SkillsComponent, ChatBotComponent]
+    imports: [RouterOutlet, SelfIntroComponent, AboutComponent, WorkexperienceComponent, PortfolioComponent, ProjectComponent, ContactComponent, SkillsComponent, ChatBotComponent, NavbarComponent]
 })
 export class AppComponent {
   title = 'Manan_portfolio';

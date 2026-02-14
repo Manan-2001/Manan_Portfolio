@@ -1,112 +1,107 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-lg">
-        <p class="p">What projects have I worked on?</p>
-        <h2>Projects</h2>
-        <hr
-          style="
-            margin-left: 36%;
-            justify-content: center;
-            border: 2pt rgb(4, 152, 201) solid;
-            width: 30%;
-          "
-        />
-      </div>
+<section class="bb-hero">
+    <button class="bb-back-btn" (click)="goBack()">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+    <div class="bb-overlay">
+        <h1>Expense & Expenditure Application</h1>
+        <p class="tagline">Smart Mobile-Based Personal Finance Tracker</p>
+
+        <div class="bb-tags">
+            <span>Android</span>
+            <span>Kotlin</span>
+            <span>Firebase</span>
+            <span>Lottie</span>
+            <span>Mobile App</span>
+        </div>
+
+        <div class="bb-actions">
+            <a class="bb-btn" target="_blank" rel="noopener noreferrer"
+               href="https://github.com/Manan-2001/Expense-and-Expenditure-App">
+                <i class="fab fa-github"></i> Source Code
+            </a>
+        </div>
     </div>
-    <br />
-    <br />
-    <div class="container content">
-      <h4 style="font-family: 'Baloo Paaji', cursive; ">
-        Expense and Expenditure Application
-      </h4>
-      <br />
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5">
-          <hr
-            style="
-              font-weight: bold;
-              font-size: 1vw;
-              color: white;
-              border: 1px solid white;
-            "
-          />
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1">
-          <h1
-            style="
-              font-weight: bold;
-              font-size: 1.5vw;
-              text-align: center;
-              color: white;
-            "
-          >
-            X
-          </h1>
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-5">
-          <hr
-            style="
-              font-weight: bold;
-              font-size: 1vw;
-              text-align: center;
-              color: white;
-              border: 1px solid white;
-            "
-          />
-        </div>
-      </div>
-      <br />
-      <a routerLink=""
-        ><button class="btn btn1" type="submit" style="float: right">
-          <i class="fa fa-mail-reply-all"></i></button
-      ></a>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center">
-          <video
-            src="/assets/SelfIntro/PGAVDestinations_compressed.mp4"
-            autoplay
-            controls
-          ></video>
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <div
-          class="col-lg-12 col-md-12 col-sm-12"
-          style="
-            padding: 2%;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: justify;
-          "
-        >
-          <a href="https://github.com/Manan-2001/Expense-and-Expenditure-App" target="_blank"
-            ><button class="btn btn1">
-              GitHub<i class="fa fa-github-square"></i></button></a
-          ><br /><br />
-          <p class="cp">
-            I developed an Expense and Expenditure Application as an academic project during my MCA program. The primary goal of this project was to create a user-friendly mobile application for tracking expenses, helping users manage their finances effectively.
-          </p>
-          <p class="cp">
-            The application was built using Android Studio and Kotlin, ensuring a modern and efficient development process. To enhance the user experience, I incorporated Lottie Animations, which provided smooth and visually appealing transitions within the app.
-          </p>
-          <p class="cp">
-            Key features of the Expense and Expenditure Application include functionalities for tracking daily expenses, categorizing expenditures, and providing an overview of spending patterns. Users can easily add, update, and delete expense entries, making it simple to manage and monitor their financial activities.
-          </p>
-          <p class="cp">
-            Additionally, the application includes secure login and registration activities. For user authentication, I integrated Firebase, which offers robust and reliable authentication services. This ensures that users' data is protected and only accessible to authorized individuals.
-          </p>
-          <p class="cp">
-            This project highlights my skills in mobile app development, particularly with Kotlin and Android Studio. It also demonstrates my ability to create intuitive and engaging user interfaces using Lottie Animations. Furthermore, the integration of Firebase for authentication underscores my competency in incorporating backend services to enhance application functionality and security.
-          </p>
-          
-        </div>
-      </div>
-      <hr />
-      <a routerLink=""
-        ><button class="btn btn1" type="submit" style="float: right">
-          <i class="fa fa-mail-reply-all"></i></button
-      ></a>
+</section>
+
+<section class="bb-container">
+
+    <!-- Overview -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-circle-info"></i> Project Overview</h2>
+        <p>
+            Expense and Expenditure Application is a mobile-based financial management system
+            designed to help users track daily expenses, manage spending habits, and monitor
+            financial activities digitally. The system replaces manual expense tracking with
+            a secure, structured, and automated solution.
+        </p>
     </div>
-  </div>
-  
+
+    <!-- Problem + Solution -->
+    <div class="bb-grid">
+        <div class="bb-card neon">
+            <h3><i class="fas fa-triangle-exclamation"></i> Problem</h3>
+            <ul>
+                <li>Manual expense tracking</li>
+                <li>No expense categorization</li>
+                <li>No spending analytics</li>
+                <li>Poor financial planning</li>
+            </ul>
+        </div>
+
+        <div class="bb-card neon">
+            <h3><i class="fas fa-lightbulb"></i> Solution</h3>
+            <ul>
+                <li>Digital expense tracking</li>
+                <li>Category-based expenses</li>
+                <li>Visual spending overview</li>
+                <li>Secure user accounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-gears"></i> Core Features</h2>
+        <div class="feature-grid">
+            <div><i class="fas fa-lock"></i> Secure Login</div>
+            <div><i class="fas fa-user-plus"></i> User Registration</div>
+            <div><i class="fas fa-wallet"></i> Expense Tracking</div>
+            <div><i class="fas fa-layer-group"></i> Category Management</div>
+            <div><i class="fas fa-receipt"></i> Add / Edit / Delete Expenses</div>
+            <div><i class="fas fa-chart-line"></i> Spending Overview</div>
+            <div><i class="fas fa-cloud"></i> Firebase Authentication</div>
+            <div><i class="fas fa-mobile-screen"></i> Mobile Optimized UI</div>
+        </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-diagram-project"></i> System Architecture</h2>
+        <div class="flow">
+            User → Android App (Kotlin) → Firebase Auth → Firebase Database → App Dashboard → User
+        </div>
+    </div>
+
+    <!-- Role -->
+    <div class="bb-card neon">
+        <h2><i class="fas fa-user-gear"></i> My Role</h2>
+        <p>
+            I designed and developed the complete application including UI design,
+            Kotlin-based development, Firebase authentication integration, database handling,
+            Lottie animations, testing, and deployment as a full academic project.
+        </p>
+    </div>
+
+    <!-- Future -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-rocket"></i> Future Scope</h2>
+        <div class="future-grid">
+            <span><i class="fas fa-chart-pie"></i> Advanced Analytics</span>
+            <span><i class="fas fa-file-export"></i> PDF/Excel Export</span>
+            <span><i class="fas fa-bell"></i> Expense Alerts</span>
+            <span><i class="fas fa-brain"></i> AI Expense Insights</span>
+        </div>
+    </div>
+
+</section>

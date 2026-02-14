@@ -1,313 +1,211 @@
-h2 {
-  text-align: center;
-  font-family: "Baloo Paaji", cursive;
-  font-weight: bold;
-  font-size: 2.5vw;
-
-  color: rgb(212, 212, 212);
+.portfolio-section {
+  background: #000;
+  padding: 10px 5%;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-.cardBox {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  place-items: center;
-  overflow: hidden;
-  margin-top: 7%;
+/* Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h6 {
+  color: #aaa;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.section-header h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  background: linear-gradient(90deg, #8ffdeb, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header .line {
+  width: 120px;
+  height: 3px;
+  margin: 12px auto;
+  background: #00ffd5;
   border-radius: 10px;
-  box-shadow: 4px 8px 8px rgba(190, 235, 243, 0.692);
 }
 
+/* Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  align-items: stretch;
+}
 
-.collapse > hr {
+/* Cards */
+.p-card {
+  background: #0b0b0b;
+  border-radius: 18px;
+  padding: 25px;
   text-align: center;
-  border-bottom: 1pt dashed whitesmoke;
-}
-#about-me-container {
-  opacity: 0; /* initial opacity */
-  transition: opacity 5s; /* transition duration */
-}
-
-#about-me-container.fade-in {
-  opacity: 1; /* final opacity */
-}
-.card {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(226, 223, 223, 0.829);
-  background-repeat: no-repeat;
-  align-items: center;
-  text-align: center;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.08);
+  transition: 0.4s ease;
+  position: relative;
   overflow: hidden;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.p-card.active {
+  border: 1px solid #00ffd5;
+  box-shadow: 0 0 50px rgba(0, 229, 255, 0.5);
+  transform: translateY(-12px) scale(1.02);
+}
+
+.p-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 45px rgba(0, 229, 255, 0.35);
+}
+
+.p-card img {
+  height: 120px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.p-card h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00ffd5;
+}
+
+.p-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.neo-btn {
+  background: transparent;
+  color: #00ffd5;
+  border: 1px solid #00ffd5;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
   cursor: pointer;
 }
-.cardBox:hover {
-  border-radius: 15px;
-  box-shadow: 8px 10px 12px rgba(159, 201, 197, 0.822);
-}
-@media (max-width: 346px) {
-  * {
-    overflow: hidden;
-  }
-  .card {
-    margin-left: -5%;
-    height: 300px;
-  }
-  .card img {
-    width: 100px;
-    height: 550px;
-  }
-}
-.card h5 {
-  margin-top: 5%;
-  font-family: "Baloo Paaji", cursive;
-  font-weight: 580;
-  padding: 2%;
-  font-size: 1.5vw;
+
+.neo-btn:hover,
+.neo-btn.active {
+  background: #98f9e9;
+  color: #000;
+  box-shadow: 0 0 15px #9aefe1;
 }
 
+/* Collapse detail */
+.p-detail {
+  margin: 40px auto;
+  max-width: 1100px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.9), rgba(10,10,10,0.95));
+  border: 1px solid 00ffd5;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 0 30px rgba(0,229,255,0.15), inset 0 0 20px rgba(0,229,255,0.05);
+  position: relative;
+}
 
-h6{
+.p-detail::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #00ffd5;
+  border-radius: 10px;
+  box-shadow: 0 0 12px 00ffd5;
+}
+
+.p-detail h5 {
   text-align: center;
-  font-family: "Baloo Paaji", cursive;
-}
-@media (max-width:991px)and (min-width:600px) {
-  h2 {
-    font-size: 5vw;
-  }
-  h6{
-    font-size: 4vw;
-  }
-  .btn1{
-    font-size: 3vw;
-  }
-  .p{
-    font-size: 4vw;
-  }
-  i{
-    font-size: 5vw;
-  }
-  .card h5{
-    font-size: 4vw;
-  }
-}
-@media (max-width:600px) {
-h2 {
- 
-  font-size: 10vw;
-}
-.card h5{
-  font-size: 6vw;
-}
-h6{
-  font-size: 6vw;
-}
-.p{
-  font-size: 5vw;
-}
-i{
-  font-size: 7vw;
-}
-}
-.card .content {
-  transform: translateY(100%);
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-.card:hover {
-  box-shadow: 0px 10px 12px rgba(20, 20, 20, 0.692);
+  color: #00ffd5;
+  margin-bottom: 15px;
 }
 
-.card:hover .content {
-  transform: translateY(0);
+.p-detail p {
+  text-align: justify;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.tech-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-icons img {
+  background: white;
+  border-radius: 15px;
+  height: 50px;
+}
+
+/* Smooth collapse */
+.collapse {
+  transition: height 0.4s ease, opacity 0.3s ease;
+}
+
+.collapse:not(.show) {
+  display: none;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.collapse.show {
+  height: auto;
   opacity: 1;
 }
 
-.card:hover h5,
-.card:hover img {
-  display: none;
-}
-h6 {
-  font-weight: 700;
-}
-.collapse {
-  border-radius: 15px;
-  box-shadow: 3px 4px 4px rgb(153, 235, 255);
-  border-left: 1px dashed rgb(153, 235, 255);
-}
-.collapse > h5 {
-  color: rgb(65, 208, 255);
-  padding: 1%;
-  text-shadow: 1px 1.3px 1.3px rgb(65, 208, 255);
-  text-align: center;
-}
-.collapse > p {
-  color: whitesmoke;
-  padding: 1%;
-  text-align: justify;
-}
+/* Mobile */
+@media (max-width: 600px) {
+  .portfolio-section {
+    padding: 20px 5%;
+  }
+  .portfolio-grid{
+    margin-bottom: 60px;
+  }
 
-.js {
-  box-shadow: 3px 4px 4px rgb(250, 236, 115);
-  border-radius: 15px;
-  margin-left: 3%;
-}
-.js:hover {
-  box-shadow: 5px 6px 6px rgb(250, 236, 115);
-}
-.ts {
-  box-shadow: 3px 4px 4px rgb(115, 178, 250);
-  margin-left: 3%;
-}
-.ts:hover {
-  box-shadow: 5px 6px 6px rgb(115, 178, 250);
-}
-.java {
-  box-shadow: 3px 4px 4px rgb(217, 217, 218);
-  margin-left: 3%;
-}
-.java:hover {
-  box-shadow: 5px 6px 6px rgb(217, 217, 218);
-}
-.ng {
-  box-shadow: 3px 4px 4px rgba(255, 62, 62, 0.925);
-  margin-left: 3%;
-}
-.ng:hover {
-  box-shadow: 5px 6px 6px rgb(255, 29, 29);
-}
-.bt {
-  box-shadow: 3px 4px 4px rgb(195, 0, 255);
-  margin-left: 3%;
-}
-.bt:hover {
-  box-shadow: 5px 6px 6px rgb(195, 0, 255);
-}
-.html {
-  box-shadow: 3px 4px 4px rgb(255, 102, 0);
-  margin-left: 3%;
-}
-.html:hover {
-  box-shadow: 5px 6px 6px rgb(255, 102, 0);
-}
-.css {
-  box-shadow: 3px 4px 4px rgb(0, 174, 255);
-  margin-left: 3%;
-}
-.css:hover {
-  box-shadow: 5px 6px 6px rgb(0, 174, 255);
-}
-.spBoot {
-  box-shadow: 3px 4px 4px rgb(39, 196, 0);
-  margin-left: 3%;
-}
-.spBoot:hover {
-  box-shadow: 5px 6px 6px rgb(39, 196, 0);
-}
-.rp {
-  box-shadow: 3px 4px 4px rgb(0, 67, 211);
-  margin-left: 3%;
-}
-.rp:hover {
-  box-shadow: 5px 6px 6px rgb(0, 67, 211);
-}
-.aws {
-  box-shadow: 3px 4px 4px rgb(255, 145, 0);
-  background-color: whitesmoke;
-}
-.aws:hover {
-  box-shadow: 5px 6px 6px rgb(255, 145, 0);
-}
-.psql {
-  box-shadow: 3px 4px 4px rgb(17, 0, 255);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.psql:hover {
-  box-shadow: 5px 6px 6px rgb(17, 0, 255);
-}
-.firebase {
-  box-shadow: 3px 4px 4px rgb(255, 187, 0);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.firebase:hover {
-  box-shadow: 5px 6px 6px rgb(255, 187, 0);
-}
-.postman {
-  box-shadow: 3px 4px 4px rgb(255, 94, 0);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.postman:hover {
-  box-shadow: 5px 6px 6px rgb(255, 94, 0);
-}
-.Trello {
-  box-shadow: 3px 4px 4px rgb(17, 0, 255);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.Trello:hover {
-  box-shadow: 5px 6px 6px rgb(17, 0, 255);
-}
-.VSCode {
-  box-shadow: 3px 4px 4px rgb(0, 140, 255);
-  margin-left: 3%;
-}
-.VSCode:hover {
-  box-shadow: 5px 6px 6px rgb(0, 140, 255);
-}
-.AS {
-  box-shadow: 3px 4px 4px rgb(17, 0, 255);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.AS:hover {
-  box-shadow: 5px 6px 6px rgb(17, 0, 255);
-}
-.intelije {
-  box-shadow: 3px 4px 4px rgb(0, 108, 248);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.intelije:hover {
-  box-shadow: 5px 6px 6px rgb(0, 108, 248);
-}
-.github {
-  box-shadow: 3px 4px 4px rgb(184, 184, 184);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.github:hover {
-  box-shadow: 5px 6px 6px rgb(184, 184, 184);
-}
-.bitbucket {
-  box-shadow: 3px 4px 4px rgb(0, 119, 255);
-  background-color: whitesmoke;
-  margin-left: 3%;
-}
-.bitbucket:hover {
-  box-shadow: 5px 6px 6px rgb(0, 119, 255);
-}
-.python {
-  box-shadow: 3px 4px 4px rgb(170, 170, 170);
-  margin-left: 3%;
-}
-.python:hover {
-  box-shadow: 5px 6px 6px rgb(170, 170, 170);
-}
-.sql {
-  box-shadow: 3px 4px 4px rgb(170, 170, 170);
-  margin-left: 3%;
-  background-color: whitesmoke;
-}
-.sql:hover {
-  box-shadow: 5px 6px 6px rgb(170, 170, 170);
-}
-.collapse > div > img {
-  border-radius: 15px;
-  margin-top: 1%;
+  .p-card img {
+    height: 90px;
+  }
+
+  .p-card h5 {
+    font-size: 18px;
+  }
+
+  .p-card p {
+    font-size: 13px;
+  }
+
+  .p-detail {
+    padding: 20px;
+    margin: 25px auto;
+  }
+
+  .p-detail p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .neo-btn {
+    width: 100%;
+  }
 }

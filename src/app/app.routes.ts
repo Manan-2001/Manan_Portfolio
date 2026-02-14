@@ -7,6 +7,9 @@ import { ExpenseAndExpenditureComponent } from './expense-and-expenditure/expens
 import { EmployeeManagementRestAPIComponent } from './employee-management-rest-api/employee-management-rest-api.component';
 import { SportActivityRecognizationComponent } from './sport-activity-recognization/sport-activity-recognization.component';
 import { HireFormComponent } from './hire-form/hire-form.component';
+import { BudgetBuddyComponent } from './budget-buddy/budget-buddy.component';
+import { TutorologyLMSComponent } from './tutorology-lms/tutorology-lms.component';
+import { TutorologyofficialComponent } from './tutorologyofficial/tutorologyofficial.component';
 
 export const routes: Routes = [
     {
@@ -19,8 +22,20 @@ export const routes: Routes = [
         component:PGAVRentalSystemComponent
     },
     {
+        path:"Budget_Buddy",
+        component:BudgetBuddyComponent
+    },
+    {
         path:"Cafe_Mocha_Mania",
         component:CafeMochaManiaComponent
+    },
+    {
+        path:"Tutorology_LMS",
+        component:TutorologyLMSComponent
+    },
+    {
+        path:"Tutorology_Official_Site",
+        component:TutorologyofficialComponent
     },
     {
         path:"Health_Plus_App",

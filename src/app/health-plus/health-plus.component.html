@@ -1,151 +1,105 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg">
-      <p class="p">What projects have I worked on?</p>
-      <h2>Projects</h2>
-      <hr
-        style="
-          margin-left: 36%;
-          justify-content: center;
-          border: 2pt rgb(4, 152, 201) solid;
-          width: 30%;
-        "
-      />
+<!-- HERO SECTION -->
+<section class="bb-hero">
+    <button class="bb-back-btn" (click)="goBack()">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+    <div class="bb-overlay">
+        <h1>Health Plus</h1>
+        <p class="tagline">Smart Healthcare & Medical Service Management Application</p>
+
+        <div class="bb-tags">
+            <span>Android</span>
+            <span>Java</span>
+            <span>Firebase</span>
+            <span>Android Studio</span>
+            <span>Mobile App</span>
+        </div>
+
+        <div class="bb-actions">
+            <a class="bb-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Manan-2001/Health_Plus_App">
+                <i class="fab fa-github"></i> Source Code
+            </a>
+        </div>
     </div>
-  </div>
-  <br />
-  <br />
-  <div class="container content">
-    <h4 style="font-family: 'Baloo Paaji', cursive; ">
-      Health PLUS Application
-    </h4>
-    <br />
-    <div class="row">
-      <div class="col-lg-5 col-md-5 col-sm-5">
-        <hr
-          style="
-            font-weight: bold;
-            font-size: 1vw;
-            color: white;
-            border: 1px solid white;
-          "
-        />
-      </div>
-      <div class="col-lg-1 col-md-1 col-sm-1">
-        <h1
-          style="
-            font-weight: bold;
-            font-size: 1.5vw;
-            text-align: center;
-            color: white;
-          "
-        >
-          X
-        </h1>
-      </div>
-      <div class="col-lg-5 col-md-5 col-sm-5">
-        <hr
-          style="
-            font-weight: bold;
-            font-size: 1vw;
-            text-align: center;
-            color: white;
-            border: 1px solid white;
-          "
-        />
-      </div>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="bb-container">
+
+    <!-- Overview -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-circle-info"></i> Project Overview</h2>
+        <p>
+            Health Plus is a smart healthcare Android application designed to simplify medical services
+            by allowing users to book doctor appointments, order lab tests, and manage health profiles
+            through a secure and user-friendly mobile platform. The application transforms traditional
+            healthcare processes into a digital, accessible experience.
+        </p>
     </div>
-    <br />
-    <a routerLink=""
-      ><button class="btn btn1" type="submit" style="float: right">
-        <i class="fa fa-mail-reply-all"></i></button
-    ></a>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center">
-        <video
-          src="/assets/SelfIntro/HealthPlusApp.mp4"
-          autoplay
-          controls
-        ></video>
-      </div>
+
+    <!-- Problem + Solution -->
+    <div class="bb-grid">
+        <div class="bb-card neon">
+            <h3><i class="fas fa-triangle-exclamation"></i> Problem</h3>
+            <ul>
+                <li>Manual doctor appointment booking</li>
+                <li>No centralized health platform</li>
+                <li>Complex lab test scheduling</li>
+                <li>Poor user experience in health apps</li>
+            </ul>
+        </div>
+
+        <div class="bb-card neon">
+            <h3><i class="fas fa-lightbulb"></i> Solution</h3>
+            <ul>
+                <li>Digital appointment booking</li>
+                <li>Centralized healthcare system</li>
+                <li>Integrated lab test ordering</li>
+                <li>Smooth mobile user experience</li>
+            </ul>
+        </div>
     </div>
-    <br />
-    <div class="row">
-      <div
-        class="col-lg-12 col-md-12 col-sm-12"
-        style="
-          padding: 2%;
-          color: white;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          text-align: justify;
-        "
-      >
-        <a href="https://github.com/Manan-2001/Health_Plus_App" target="_blank"
-          ><button class="btn btn1">
-            GitHub<i class="fa fa-github-square"></i></button></a
-        ><br /><br />
-        <p class="cp">
-          During my <strong>final year project</strong>, I developed an <strong>Android application</strong>
-          called <strong>Health Plus</strong>. The goal was to create a user-friendly platform
-          where users could <strong>book doctor appointments</strong>, <strong>order lab tests</strong>, and
-          manage their profiles through <strong>login</strong> and <strong>registration activities</strong>. This
-          project was built using <strong>Java</strong> in <strong>Android Studio</strong>, with <strong>Firebase as the
-          database</strong> and <strong>Lottie animations</strong> for an enhanced user interface.
-        </p>
-        <p class="cp">
-          One of the key features I implemented was the appointment booking
-          system. Users can browse through a list of available doctors, view
-          their profiles and specialties, and book appointments at their
-          convenience. Additionally, I developed a module for ordering lab
-          tests, allowing users to select tests, schedule appointments for
-          sample collection, and receive results directly within the app.
-        </p>
-        <p class="cp">
-          To manage user authentication and profile management, I incorporated
-          login and registration activities. New users can register by providing
-          necessary details, while existing users can log in to access their
-          profiles, view their appointment history, and manage their lab test
-          orders.
-        </p>
-        <p class="cp">
-          To enhance the user interface, I used Lottie animations, creating
-          smooth and visually appealing transitions that make the app more
-          engaging and enjoyable to use. Firebase was utilized as the backend
-          database, providing real-time data synchronization and secure storage
-          for user information and activity logs.
-        </p>
-        <p class="cp">
-          The development process involved using Java to write the core
-          application logic and Android Studio as the integrated development
-          environment. I structured the application into different modules,
-          making the codebase modular and maintainable. Firebase integration
-          allowed for real-time data updates and user authentication, ensuring a
-          seamless and secure user experience.
-        </p>
-        <p class="cp">
-          Throughout the project, I conducted extensive testing to ensure all
-          features functioned correctly and the application performed well under
-          various conditions. I also optimized the code and assets for better
-          performance and responsiveness.
-        </p>
-        <p class="cp">
-          The Health Plus Android application successfully combines
-          functionality with an engaging user experience, showcasing my skills
-          in mobile app development and user interface design. This project
-          highlights my ability to use modern technologies to create interactive
-          and efficient mobile applications. I gained deeper insights into Java
-          and Android development, enhanced my proficiency in Firebase for
-          backend services, and learned effective techniques for integrating
-          animations into mobile applications. This project also improved my
-          ability to manage a personal project from conception to completion,
-          including planning, development, testing, and deployment.
-        </p>
-      </div>
+
+    <!-- Features -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-gears"></i> Core Features</h2>
+        <div class="feature-grid">
+            <div><i class="fas fa-user-lock"></i> Secure Login</div>
+            <div><i class="fas fa-user-plus"></i> Registration</div>
+            <div><i class="fas fa-user-doctor"></i> Doctor Booking</div>
+            <div><i class="fas fa-flask"></i> Lab Test Orders</div>
+            <div><i class="fas fa-calendar-check"></i> Appointment Scheduling</div>
+        </div>
     </div>
-    <hr />
-    <a routerLink=""
-      ><button class="btn btn1" type="submit" style="float: right">
-        <i class="fa fa-mail-reply-all"></i></button
-    ></a>
-  </div>
-</div>
+
+    <!-- Architecture -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-diagram-project"></i> System Architecture</h2>
+        <div class="flow">
+            User → Android App → Firebase Auth → Firebase Database → Services → App UI → User
+        </div>
+    </div>
+
+    <!-- Role -->
+    <div class="bb-card neon">
+        <h2><i class="fas fa-user-gear"></i> My Role</h2>
+        <p>
+            I designed and developed the complete Health Plus application including UI design,
+            Android development using Java, Firebase integration for authentication and database,
+            Lottie animation integration, system architecture, testing, debugging, and performance optimization.
+        </p>
+    </div>
+
+    <!-- Future -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-rocket"></i> Future Scope</h2>
+        <div class="future-grid">
+            <span><i class="fas fa-video"></i> Video Consultation</span>
+            <span><i class="fas fa-heart-pulse"></i> Health Monitoring</span>
+            <span><i class="fas fa-file-export"></i> Medical Report Export</span>
+            <span><i class="fas fa-cloud"></i> Cloud Health Records</span>
+        </div>
+    </div>
+
+</section>

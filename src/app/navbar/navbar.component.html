@@ -1,0 +1,29 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+
+  <!-- Logo -->
+  <div class="logo" (click)="scrollTo('home')">
+    Manan<span>.</span>
+  </div>
+
+  <!-- Menu -->
+  <ul class="nav-links">
+    <li (click)="scrollTo('Home')" 
+        [class.active]="activeSection==='Home'">Home</li>
+
+    <li (click)="scrollTo('About')" 
+        [class.active]="activeSection==='About'">About</li>
+
+    <li (click)="scrollTo('Skills')" 
+        [class.active]="activeSection==='Skills'">Skills</li>
+
+    <li (click)="scrollTo('exp')" 
+        [class.active]="activeSection==='exp'">Experience</li>
+
+    <li (click)="scrollTo('Portfolio')" 
+        [class.active]="activeSection==='Portfolio'">Portfolio</li>
+
+    <li (click)="scrollTo('Contact')" 
+        [class.active]="activeSection==='Contact'">Contact</li>
+  </ul>
+
+</nav>

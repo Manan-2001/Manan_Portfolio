@@ -1,0 +1,99 @@
+/* ========================= */
+/* NAVBAR BASE */
+/* ========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Sticky Effect */
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #00ffd5;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-links li:hover {
+  color: #00ffd5;
+}
+
+/* Active */
+.nav-links li.active {
+  color: #00ffd5;
+}
+
+/* Underline animation */
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00ffd5;
+  transition: 0.3s;
+}
+
+.nav-links li:hover::after,
+.nav-links li.active::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 991px) {
+  .navbar {
+    display: none; /* desktop navbar hidden on mobile */
+  }
+}

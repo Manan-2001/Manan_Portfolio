@@ -1,280 +1,118 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg">
-      <h6 style="color: rgb(190, 190, 190)">What projects have I worked on?</h6>
-      <h2>Projects</h2>
-      <hr
-        style="
-          margin-left: 36%;
-          justify-content: center;
-          border: 2pt rgb(4, 152, 201) solid;
-          width: 30%;
-        "
-      />
-    </div>
+<section class="projects-section" id="projects">
+  <div class="section-header">
+    <h6>What projects have I worked on?</h6>
+    <h2>PROJECTS</h2>
+    <div class="line"></div>
   </div>
-  <br />
-  <br />
-  <!-- <div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <br>
-          <h6>
-            Category:
-            <span
-              style="
-                color: rgba(0, 113, 243, 0.856);
-                text-shadow: 0.05rem 0.05rem rgb(63, 63, 63);
-              "
-              >Front End Development</span
-            >
-          </h6>
-          <br />
-        </div>
+
+  <div class="projects-grid" id="about-me-container">
+    <div class="project-card budget_buddy">
+      <div class="card-content">
+        <h5>Budget Buddy </h5>
+        <p>
+          Budget Buddy is a full-stack personal finance management system
+          that helps users track expenses, manage budgets, and analyze
+          financial habits using a smart digital dashboard.
+        </p>
+        <a routerLink="/Budget_Buddy" class="btn">See More</a>
       </div>
-    </div> -->
-  <div class="container">
-    <div class="row" id="about-me-container">
-      <div class="col-lg col-sm col-md">
-        <div class="box marg">
-          <div class="cardBox">
-            <div class="card PGAV">
-              <div class="content">
-                <h6 style="font-family: 'Baloo Paaji', cursive">
-                  PGAV<span style="color: darkorange; font-size: 0.7rem"
-                    >DESTINATIONS</span
-                  >
-                </h6>
-                <p style="text-align: justify">
-                  During my <strong> Internship </strong> at
-                  <strong> Ankhub Technologies Services</strong>, I had the
-                  opportunity to work on an innovative project aimed at
-                  developing a comprehensive rental services web application.
-                  This platform integrates four distinct rental services into a
-                  single seamless user experience:
-                  <strong> Accommodation Rent</strong>,<strong>
-                    Tiffin Rent</strong
-                  >,<strong> Vehicle Rent</strong>, and
-                  <strong> Electrical Appliances Rent</strong>...
-                </p>
-                <a routerLink="/PGAV_Project"
-                  ><button
-                    class="btn btn-outline-primary"
-                    style="font-size: small"
-                    data-bs-toggle="modal"
-                    data-bs-target="#pgav_destination"
-                  >
-                    See More...
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="margh5 h5">
-          PGAV<span style="font-size: 0.9rem; color: darkorange"
-            >DESTINATIONS</span
-          ><br /><br />
-        </h5>
+    </div>
+
+    <!-- Tutorology LMS -->
+    <div class="project-card TutorologyLMS">
+      <div class="card-content">
+        <h5>Tutorology <span>LMS</span></h5>
+        <p>
+          Full-stack Learning Management System built with <strong>Angular</strong>,
+          <strong>Material UI</strong>, <strong>Wix Studio</strong>, and <strong>Velo</strong>.
+          Includes Admin, Teacher & Student dashboards with complete LMS operations.
+        </p>
+        <a routerLink="/Tutorology_LMS" class="btn">See More</a>
       </div>
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card Health_PLUS">
-            <div class="content">
-              <h6
-                style="
-                  font-style: italic;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  font-weight: bold;
-                "
-              >
-                <strong> Health PLUS</strong><br />
-              </h6>
-              <p style="text-align: justify">
-                During my <strong> final year project</strong>, I developed an
-                Android application called <strong> Health Plus</strong>. The
-                goal was to create a user-friendly platform where users could
-                book doctor appointments, order lab tests, and manage their
-                profiles through login and registration activities. This project
-                was built using Java in Android Studio, with Firebase...
-              </p>
-              <a
-                routerLink="/Health_Plus_App"
-                ><button
-                  class="btn btn-outline-primary"
-                  style="font-size: small"
-                >
-                  See More...
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <h5
-          class="h5"
-          style="
-            color: white;
-            text-shadow: 0 0.2rem 0.3rem black;
-            margin-left: 10%;
-            margin-top: 2%;
-          "
-        >
-          Health PLUS Application<br /><br />
-        </h5>
+    </div>
+
+    <!-- Tutorology Official Site -->
+    <div class="project-card TutorologySite">
+      <div class="card-content">
+        <h5>Tutorology <span>Official Site</span></h5>
+        <p>
+          Official educational website developed using <strong>Wix Studio</strong> with
+          modern UI, responsive design, and optimized performance.
+        </p>
+        <a routerLink="/Tutorology_Official_Site" class="btn">See More</a>
       </div>
-      <div class="col-lg col-sm col-md">
-        <div class="cardBox">
-          <div class="card Cafe">
-            <div class="content">
-              <h6
-                style="font-style: italic; font-family: 'Baloo Paaji', cursive"
-              >
-                Mocha
-                <span style="color: rgb(252, 36, 36)">Mania</span>
-                Cafe<br />
-              </h6>
-              <p style="text-align: justify">
-                During my <strong>personal project</strong>, I developed a web
-                application for an imaginary café called<strong>
-                  Cafe Mocha Mania</strong
-                >. The aim was to create a dynamic and visually appealing
-                platform where users could explore the menu, place orders, and
-                learn more about the café. This project was built using
-                <strong>Angular</strong>,<strong> HTML</strong>,<strong>
-                  CSS</strong
-                >,<strong> Bootstrap</strong>, <strong>TypeScript</strong>,
-                and<strong> JavaScript</strong>.
-              </p>
-              <a routerLink="/Cafe_Mocha_Mania"
-                ><button
-                  class="btn btn-outline-primary"
-                  style="font-size: small"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Cafe_Mocha_Mania"
-                >
-                  See More...
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <h5 class="margh5Mocha h5" style="font-style: italic">
-          Mocha
-          <span
-            style="
-              color: rgb(252, 36, 36);
-              text-shadow: 0.07rem 0.07rem rgb(252, 36, 36);
-            "
-            >Mania</span
-          >
-          Cafe<br /><br />
-        </h5>
+    </div>
+
+
+    <!-- PGAV Project -->
+    <div class="project-card PGAV">
+      <div class="card-content">
+        <h5>PGAV <span>DESTINATIONS</span></h5>
+        <p>
+          Developed during my <strong>internship at Ankhub Technologies</strong>. A rental services web app integrating
+          Accommodation, Tiffin, Vehicle & Electrical Appliances Rent.
+        </p>
+        <a routerLink="/PGAV_Project" class="btn">See More</a>
       </div>
-      <div class="col-lg col-sm col-md">
-        <div class="box marg">
-          <div class="cardBox">
-            <div class="card RestAPI">
-              <div class="content">
-                <h6 style="font-family: 'Baloo Paaji', cursive">
-                  Employee Management RestFull API
-                </h6>
-                <p style="text-align: justify">
-                  I developed an <strong>Employee Management System</strong> as
-                  a <strong>personal full-stack project</strong>, focusing on
-                  optimizing administrative tasks associated with employee data
-                  management. This project exemplifies my proficiency in
-                  integrating backend and frontend technologies to deliver a
-                  cohesive and efficient software solution...
-                </p>
-                <a
-                routerLink="/Employee_Management_Restfull_API"
-                  ><button
-                    class="btn btn-outline-primary"
-                    style="font-size: small"
-                  >
-                    See More...
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="h5" style="color: whitesmoke">
-          Employee Management RestFull API <br /><br />
-        </h5>
+    </div>
+
+    <!-- Health PLUS -->
+    <div class="project-card Health_PLUS">
+      <div class="card-content">
+        <h5>Health PLUS Application</h5>
+        <p>
+          Final year Android project. Book appointments, lab tests & manage profiles using <strong>Java</strong> and
+          <strong>Firebase</strong>.
+        </p>
+        <a routerLink="/Health_Plus_App" class="btn">See More</a>
       </div>
-      <div class="col-lg col-sm col-md">
-        <div class="box marg">
-          <div class="cardBox">
-            <div class="card Sports">
-              <div class="content">
-                <h6 style="font-family: 'Baloo Paaji', cursive">
-                  Sports Activities Recognition System
-                </h6>
-                <p style="text-align: justify">
-                  I developed a
-                  <strong>Sports Activity Recognition System</strong> as an
-                  academic project during my MCA program. The objective of this
-                  project was to train a model capable of predicting
-                  <strong>sports activities </strong> from input
-                  <strong>Sports Videos </strong> and <strong>Images</strong>.
-                  This project employed advanced machine learning and deep
-                  learning techniques to achieve high accuracy in
-                  <strong>sports recognition</strong>...
-                </p>
-                <a
-                routerLink="/Sports_Activity_Recognition_System"
-                  ><button
-                    class="btn btn-outline-primary"
-                    style="font-size: small"
-                  >
-                    See More...
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="h5" style="color: whitesmoke">
-          Sports Activities Recognition System <br /><br />
-        </h5>
+    </div>
+
+    <!-- Cafe Mocha Mania -->
+    <div class="project-card Cafe">
+      <div class="card-content">
+        <h5>Mocha <span>Mania</span> Cafe</h5>
+        <p>
+          Personal project built with <strong>Angular, HTML, CSS, TypeScript</strong> & <strong>Bootstrap</strong> for
+          an engaging café experience.
+        </p>
+        <a routerLink="/Cafe_Mocha_Mania" class="btn">See More</a>
       </div>
-      <div class="col-lg col-sm col-md">
-        <div class="box marg">
-          <div class="cardBox">
-            <div class="card Expense">
-              <div class="content">
-                <h6 style="font-family: 'Baloo Paaji', cursive">
-                  Expense and Expenditure Application
-                </h6>
-                <p style="text-align: justify">
-                  I developed an
-                  <strong>Expense and Expenditure Application</strong> as an
-                  <strong>academic project</strong> during my MCA program. The
-                  primary goal of this project was to create a user-friendly
-                  mobile application for <strong>tracking expenses</strong>,
-                  helping users manage their finances effectively.<br />
-                  The application was built using
-                  <strong>Android Studio</strong> and <strong>Kotlin</strong>,
-                  ensuring a modern ....
-                </p>
-                <a
-                  routerLink="/Expense_Expenditure"
-                  ><button
-                    class="btn btn-outline-primary"
-                    style="font-size: small"
-                  >
-                    See More...
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="h5" style="color: whitesmoke">
-          Expense and Expenditure Application<br /><br />
-        </h5>
+    </div>
+
+    <!-- Employee Management API -->
+    <div class="project-card RestAPI">
+      <div class="card-content">
+        <h5>Employee Management API</h5>
+        <p>
+          Personal full-stack project using <strong>Spring Boot</strong> backend & <strong>Angular</strong> frontend to
+          manage employee data efficiently.
+        </p>
+        <a routerLink="/Employee_Management_Restfull_API" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Sports Activities Recognition -->
+    <div class="project-card Sports">
+      <div class="card-content">
+        <h5>Sports Activities Recognition</h5>
+        <p>
+          Academic project using Machine Learning & Deep Learning to predict sports activities from videos & images.
+        </p>
+        <a routerLink="/Sports_Activity_Recognition_System" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Expense Manager -->
+    <div class="project-card Expense">
+      <div class="card-content">
+        <h5>Expense & Expenditure App</h5>
+        <p>
+          MCA project using <strong>Kotlin & Android Studio</strong> for a mobile app to track expenses with Firebase
+          integration.
+        </p>
+        <a routerLink="/Expense_Expenditure" class="btn">See More</a>
       </div>
     </div>
   </div>
-</div>
+</section>

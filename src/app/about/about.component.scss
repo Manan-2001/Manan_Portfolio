@@ -1,116 +1,157 @@
-
-h2{
-    text-align: center;
-    font-family: 'Baloo Paaji', cursive;
-    font-weight: bold;
-    color: rgb(212, 212, 212);
+.about-section {
+  padding: 10px 12px;
+  overflow: hidden;
+  background: #000;
 }
-h4{
+
+/* ---------------- HEADER ---------------- */
+
+h6 {
+  color: rgb(190, 190, 190);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-weight: 700;
+  background: linear-gradient(90deg, #8ffdeb, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+ .line {
+  width: 120px;
+  height: 3px;
+  margin: 12px auto;
+  background: #00ffd5;
+  border-radius: 10px;
+}
+
+/* ---------------- CONTENT ---------------- */
+
+.fade-container {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.fade-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-box {
+  text-align: center;
+  padding: 10px 10px 30px 10px;
+}
+
+/* Summary */
+
+.summary-title {
   font-family: 'Baloo Paaji', cursive;
   font-weight: bold;
   color: rgb(212, 212, 212);
-}
-p{
-    color: rgb(255, 255, 255);
-    font-size: 1.3vw;
-    font-size: medium;
-    align-items: flex-start;
-    
-}
-button:hover{
-    background-color: linear-gradient(to right, black,white);
+  font-size: 26px;
 }
 
-button{
-    font-size: 1vw;
-}
-@media (max-width:560px) {
-    h6{
-  
-      margin-top: 0;
-      font-family: 'Baloo Paaji', cursive;
-      font-weight: 580;
-      padding: 2%;
-    //   font-size:3vw;
-      text-align: center;
-  }
-  h2{ 
-    font-size: 3vw;
-  }
-  }
-h6{
-    // font-size: 2vw;
-    text-align: center;
-    font-family: 'Baloo Paaji', cursive;
-    color: rgb(190, 190, 190);
-}
-h2{
-    font-size: 2.5vw;
-}
-p{
-    font-size: 1.5vw;
-    text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.summary-line {
+  margin: 10px auto 25px auto;
+  border: 2px solid rgb(236, 236, 236);
+  width: 120px;
 }
 
-#about-me-container {
-    opacity: 0; /* initial opacity */
-    transition: opacity 5s; /* transition duration */
-  }
-  
-  #about-me-container.fade-in {
-    opacity: 1; /* final opacity */
-  }
-  .btn1{
-    background-color: none;
-    border-radius: 5px;
-    color: #03e9f4;
-    border: 1px solid #03e9f4;
-    box-shadow:  2px 2px #03e9f4;
-    font-size: 1.2vw;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .btn1:hover{
-    background-color: #98faffd5;
-    color: black;
-    box-shadow:  4px 4px #03e9f4;
-    i{
-      color: black;
-    }
-  }
-  @media (max-width:991px)and (min-width:600px) {
-    h2 {
-      font-size: 5vw;
-    }
-    h6{
-      font-size: 4vw;
-    }
-    .btn1{
-      font-size: 3vw;
-    }
-    .p{
-      font-size: 4vw;
-    }
-    i{
-      font-size: 5vw;
-    }
+/* Text */
+
+.about-text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // max-width: 1200px;
+  margin: auto;
 }
-@media (max-width:600px) {
+
+/* Button */
+
+.btn-wrapper {
+  margin-top: 30px;
+}
+
+.btn1 {
+  background: transparent;
+  border-radius: 6px;
+  color: #00ffd5;
+  border: 1px solid #00ffd5;
+  box-shadow: 2px 2px #00ffd5;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 18px;
+  transition: 0.3s ease;
+}
+
+.btn1 i {
+  margin-left: 6px;
+  transition: 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #98f9e9;
+  color: black;
+  box-shadow: 4px 4px #00ffd5;
+}
+
+.btn1:hover i {
+  color: black;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 991px) {
+
   h2 {
-   
-    font-size: 10vw;
+    font-size: 36px;
   }
-  h6{
-    font-size: 6vw;
+
+  h6 {
+    font-size: 16px;
   }
-  .btn1{
-    font-size: 4vw;
+
+  .about-text {
+    font-size: 17px;
   }
-  .p{
-    font-size: 5vw;
+
+  .summary-title {
+    font-size: 24px;
   }
-  i{
-    font-size: 7vw;
+}
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 60px 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .summary-title {
+    font-size: 22px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .btn1 {
+    font-size: 15px;
+    padding: 9px 16px;
   }
 }

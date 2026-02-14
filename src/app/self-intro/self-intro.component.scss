@@ -1,50 +1,81 @@
-
+/* ===== DARK HERO BOX ===== */
+.selfSection{
+  background: #000;
+}
 .boxed {
-    border: 1px solid rgba(255, 255, 255, 0.712);
-    border-radius: 25px;
-    box-shadow: 6px 8px 8px rgba(149, 232, 247, 0.692);
-    font-family:  "Merienda", cursive;
-    font-weight:bolder;
-    background-color: rgb(226, 226, 226);
- 
-}
-.textTyping{
-    margin-top: 8%;
-}
-@media (max-width:991px) {
-    .textTyping{
-        margin-top: 0;
-    }
-    .boxed{
-        background-color: rgba(255, 255, 255, 0.568);;
-    }
-}
-h3{
-    font-weight: 400;
-    text-align: center;
-    font-size: 3vw;
-    text-shadow: 2px 2px 5px rgba(63, 63, 63, 0.3);
-}
-@media (max-width:991px)and (min-width:600px) {
-    h3{
-        font-size: 4vw;
-    }
-}
-@media (max-width:600px) {
-    h3{
-        font-size: 8vw;
-    }
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06); /* glass effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 0 10px rgba(162, 162, 162, 0.15),
+    0 0 20px rgba(94, 94, 94, 0.05);
+
+  font-weight: bold;
+
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 70px auto;
 }
 
-img{
-        max-width: 25vw;
-        max-height: 25vw;
-        border-radius: 25px;
-        box-shadow: 0px 4px 8px rgba(56, 56, 56, 0.692);
-        
+/* Center content */
+.textTyping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-span{
-    color: rgba(4, 151, 201, 0.836);
-    font-weight: bold;
-    text-shadow: 2px 3px 5px rgba(63, 63, 63, 0.3);
+
+/* Main text */
+h3 {
+  font-weight: 500;
+  text-align: center;
+  color: #E5E7EB; /* soft white */
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  font-size: clamp(22px, 3.5vw, 42px);
+  line-height: 1.5;
+}
+
+/* Typed text */
+span.typing {
+  color: #00ffd5;  /* accent blue */
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 991px) {
+  .boxed {
+    padding: 36px 22px;
+    border-radius: 20px;
+    max-width: 520px;
+    margin: 50px auto;
+  }
+
+  h3 {
+    font-size: clamp(20px, 4.5vw, 34px);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .boxed {
+    padding: 28px 18px;
+    border-radius: 18px;
+    margin: 40px 10px 20px 10px;
+    max-width: 95%;
+  }
+
+  h3 {
+    font-size: clamp(18px, 7vw, 28px);
+    line-height: 1.6;
+  }
+
+  span.typing {
+    white-space: normal;
+    display: inline-block;
+    text-align: center;
+  }
 }

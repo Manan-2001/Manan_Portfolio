@@ -1,139 +1,129 @@
-<style>
- 
+<section class="bb-hero">
 
-</style>
+  <button class="bb-back-btn" (click)="goBack()">
+    <i class="fa-solid fa-arrow-left"></i> Back
+  </button>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg">
-      <p class="p">What projects have I worked on?</p>
-      <h2>Projects</h2>
-      <hr
-        style="
-          margin-left: 36%;
-          justify-content: center;
-          border: 2pt rgb(4, 152, 201) solid;
-          width: 30%;
-        "
-      />
+  <div class="bb-overlay">
+    <h1>PGAV Destinations</h1>
+    <p class="tagline">Integrated Multi-Service Rental Platform</p>
+
+    <div class="bb-tags">
+      <span>Angular</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Bootstrap</span>
+      <span>TypeScript</span>
+      <span>Full Stack</span>
+    </div>
+
+    <div class="bb-actions">
+      <a class="bb-btn primary" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-globe"></i> Live Demo
+      </a>
+
+      <a class="bb-btn" 
+         href="https://github.com/Manan-2001/PGAV" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
     </div>
   </div>
-  <br />
-  <br />
-  <div class="container content">
-    <h4 style="font-family: 'Baloo Paaji', cursive;">
-      PGAV<span style="color: darkorange; ">Destinations</span>
-    </h4><br> 
-    <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5">
-            <hr style=" font-weight: bold;
-            font-size: 1vw;
-            color: white;
-            border: 1px solid white;">
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1">
-            <h1 style=" font-weight: bold;
-            font-size: 1.5vw;
-            text-align: center;
-            color: white;">X</h1>
-        </div>
-        <div class="col-lg-5 col-md-5 col-sm-5">
-            <hr style=" font-weight: bold;
-            font-size: 1vw;
-            text-align: center;
-            color: white;
-            border: 1px solid white;
-            ">
-        </div>
-    </div>
-    <br>
-    <a routerLink=""><button class="btn btn1" type="submit" style="float: right;"><i class="fa fa-mail-reply-all"></i></button></a>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center">
-        <video
-          src="/assets/SelfIntro/PGAVDestinations_compressed.mp4"
-          autoplay
-          controls
-        ></video>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div
-        class="col-lg-12 col-md-12 col-sm-12"
-        style="
-          padding: 2%;
-          color: white;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          text-align: justify;
-        "
-      ><a href="https://github.com/Manan-2001/PGAV" target="_blank"><button class="btn btn1" >GitHub<i class="fa fa-github-square" ></i></button></a><br><br>
-        <p class="cp">
-          During my <strong>internship</strong> at
-          <strong>Ankhub Technologies Services</strong>, I had the opportunity
-          to work on an innovative project aimed at developing a comprehensive
-          rental services web application. This platform integrates four
-          distinct rental services into a single seamless user experience:
-          <strong>Accommodation Rent</strong>,<strong> Tiffin Rent</strong>,
-          <strong>Vehicle Rent</strong>, and
-          <strong>Electrical Appliances Rent</strong>.
-        </p>
-        <p class="cp">
-          Our team consisted of six members, and we utilized a variety of
-          technologies to bring this project to life. On the frontend, we
-          employed <strong>Angular</strong> for building dynamic and responsive
-          user interfaces, along with <strong>HTML</strong>,<strong> CSS</strong
-          >, and <strong>Bootstrap</strong> for designing a user-friendly and
-          visually appealing layout. <strong>JavaScript</strong> and
-          <strong>TypeScript</strong> were used to enhance the functionality and
-          interactivity of the application. For version control and
-          collaborative development, we relied on <strong>Bitbucket</strong> and
-          <strong>GitHub</strong>.
-        </p>
-        <p class="cp">
-          My primary responsibilities included frontend development, where I
-          played a key role in creating and optimizing the user interface. I
-          worked on various features across the four rental categories. For
-          Accommodation Rent, I developed features allowing users to search,
-          filter, and book rental properties based on their preferences and
-          location. In the Tiffin Rent module, I enabled users to subscribe to
-          daily meal services with customizable meal plans. For Vehicle Rent, I
-          implemented a system for users to book and schedule vehicle rentals,
-          complete with payment functionalities. In the Electrical Appliances
-          Rent section, I developed a user-friendly interface for renting
-          appliances, including detailed descriptions and rental terms.
-        </p>
-        <p class="cp">
-          Ensuring a seamless user experience was a top priority. I focused on
-          making the web application fully responsive, providing a consistent
-          experience across different devices and screen sizes. My work involved
-          optimizing the user interface for ease of navigation and improved user
-          satisfaction.
-        </p>
-        <p class="cp">
-          Additionally, I was actively involved in testing and debugging the
-          application. I conducted thorough testing to ensure reliability and
-          performance, working closely with my team to resolve issues and
-          implement improvements based on feedback.
-        </p>
-        <p class="cp">
-          The successful completion of this project resulted in a robust and
-          user-friendly web application that streamlined multiple rental
-          services into a single platform. This integration provided users with
-          a convenient and efficient solution for their rental needs.
-        </p>
-        <p class="cp">
-          Through this project, I gained valuable hands-on experience in Angular
-          and modern web development practices. I also improved my skills in
-          teamwork, collaboration, and version control, enhancing my
-          problem-solving abilities through debugging and optimizing web
-          applications. This project not only honed my technical skills but also
-          provided valuable insights into developing comprehensive web solutions
-          in a collaborative environment.
-        </p>
-      </div>
-    </div>
-    <hr />
-    <a routerLink=""><button class="btn btn1" type="submit" style="float: right;"><i class="fa fa-mail-reply-all"></i></button></a>
+</section>
+
+<section class="bb-container">
+
+  <!-- Overview -->
+  <div class="bb-card glass">
+    <h2><i class="fa-solid fa-circle-info"></i> Project Overview</h2>
+    <p>
+      PGAV Destinations is a multi-service rental web platform that integrates four major rental services into one unified system:
+      Accommodation Rent, Tiffin Services, Vehicle Rentals, and Electrical Appliances Rent.
+      The platform provides a centralized digital solution for managing diverse rental needs efficiently.
+    </p>
   </div>
-</div>
+
+  <!-- Problem + Solution -->
+  <div class="bb-grid">
+    <div class="bb-card neon">
+      <h3><i class="fa-solid fa-triangle-exclamation"></i> Problem</h3>
+      <ul>
+        <li>Fragmented rental platforms</li>
+        <li>No unified service management</li>
+        <li>Manual booking processes</li>
+        <li>Poor user experience</li>
+      </ul>
+    </div>
+
+    <div class="bb-card neon">
+      <h3><i class="fa-solid fa-lightbulb"></i> Solution</h3>
+      <ul>
+        <li>Centralized rental system</li>
+        <li>Multi-service integration</li>
+        <li>Digital booking workflows</li>
+        <li>Modern responsive UI</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="bb-card glow">
+    <h2><i class="fa-solid fa-gear"></i> Core Modules</h2>
+    <div class="feature-grid">
+      <div><i class="fa-solid fa-house"></i> Accommodation Rent</div>
+      <div><i class="fa-solid fa-utensils"></i> Tiffin Services</div>
+      <div><i class="fa-solid fa-car"></i> Vehicle Rent</div>
+      <div><i class="fa-solid fa-plug"></i> Electrical Appliances</div>
+      <div><i class="fa-solid fa-calendar-check"></i> Booking System</div>
+    </div>
+  </div>
+
+  <!-- Architecture -->
+  <div class="bb-card glass">
+    <h2><i class="fa-solid fa-diagram-project"></i> System Architecture</h2>
+    <div class="flow">
+      User → Angular UI → API Layer → Database → Services → Dashboard → User
+    </div>
+  </div>
+
+  <!-- Role -->
+  <div class="bb-card neon">
+    <h2><i class="fa-solid fa-user-gear"></i> My Role</h2>
+    <p>
+      I worked as a frontend developer responsible for UI development, responsive design,
+      feature implementation, performance optimization, testing, debugging, and cross-module integration.
+      I actively contributed to building scalable and maintainable UI components across all rental services.
+    </p>
+  </div>
+
+  <!-- Internship Context -->
+  <div class="bb-card glass">
+    <h2><i class="fa-solid fa-building"></i> Internship Project</h2>
+    <p>
+      This project was developed during my internship at Ankhub Technologies Services, 
+      where I collaborated with a team of six developers using modern development practices,
+      version control systems, and agile workflows.
+    </p>
+  </div>
+
+  <!-- Future -->
+  <div class="bb-card glow">
+    <h2><i class="fa-solid fa-rocket"></i> Future Scope</h2>
+    <div class="future-grid">
+      <span>Mobile App Integration</span>
+      <span>Smart Search Filters</span>
+      <span>AI Recommendations</span>
+      <span>Real-time Tracking</span>
+      <span>Analytics Dashboard</span>
+    </div>
+  </div>
+  <div class="private-badge">
+        <i class="fas fa-lock"></i>
+        <span>Private Repository</span>
+        <span class="dot">•</span>
+        <span>Company Project</span>
+        <span class="dot">•</span>
+        <span>Agile Deployment Model</span>
+    </div>
+</section>

@@ -4,39 +4,41 @@ import { Component, ElementRef, Inject, PLATFORM_ID } from '@angular/core';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  private scrollHandler!: () => void;
 
-  constructor(private elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: Object) {}
+  private observer!: IntersectionObserver;
+
+  constructor(
+    private elementRef: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      const aboutMeContainer = this.elementRef.nativeElement.querySelector('#about-me-container');
 
-      if (aboutMeContainer) {
-        this.scrollHandler = () => {
-          const rect = aboutMeContainer.getBoundingClientRect();
-          const isInView = rect.top <= window.innerHeight && rect.bottom >= 0;
+      const target = this.elementRef.nativeElement.querySelector('#about-me-container');
 
-          if (isInView) {
-            aboutMeContainer.classList.add('fade-in');
-          } else {
-            aboutMeContainer.classList.remove('fade-in');
-          }
-        };
+      if (target) {
+        this.observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              target.classList.add('fade-in');
+            }
+          },
+          { threshold: 0.3 }
+        );
 
-        window.addEventListener('scroll', this.scrollHandler);
+        this.observer.observe(target);
       }
     }
   }
 
   ngOnDestroy(): void {
-    if (isPlatformBrowser(this.platformId) && this.scrollHandler) {
-      window.removeEventListener('scroll', this.scrollHandler);
+    if (this.observer) {
+      this.observer.disconnect();
     }
   }
 }

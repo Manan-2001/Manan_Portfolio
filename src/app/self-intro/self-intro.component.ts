@@ -1,5 +1,5 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @Component({
@@ -11,14 +11,39 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 })
 export class SelfIntroComponent {
   isBrowser: boolean;
+  showTyped = true;   // control rendering
+  private observer!: IntersectionObserver;
+
+  @ViewChild('introBox', { static: false }) introBox!: ElementRef;
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {
     this.isBrowser = isPlatformBrowser(this.platformId);
   }
 
-  ngOnInit(): void {
-    if (this.isBrowser) {
-      // Any code that needs to run on the browser
+  ngAfterViewInit(): void {
+    if (this.isBrowser && this.introBox) {
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              this.showTyped = true;   // show when visible
+            } else {
+              this.showTyped = false;  // hide when not visible
+            }
+          });
+        },
+        {
+          threshold: 0.2
+        }
+      );
+
+      this.observer.observe(this.introBox.nativeElement);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
     }
   }
 }

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background: #262626;
+    background: #000;
     scroll-behavior: smooth;
   }
   // .navbar-toggler{
@@ -264,8 +264,23 @@
       }
   }
   
-  
-  
-  
-  
-  
+ @media (min-width: 992px) {
+  .mobile-nav {
+    display: none !important;   /* hide burger menu */
+  }
+
+  .desktop-nav {
+    display: block !important;  /* show normal navbar */
+  }
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .mobile-nav {
+    display: block !important;  /* show burger menu */
+  }
+
+  .desktop-nav {
+    display: none !important;   /* hide desktop navbar */
+  }
+}

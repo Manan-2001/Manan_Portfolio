@@ -1,287 +1,171 @@
-h2 {
+.projects-section {
+  background: #000;
+  color: #fff;
+  padding: 60px 5%;
+  overflow-x: hidden;
+
+  .section-header {
     text-align: center;
-    font-family: "Baloo Paaji", cursive;
-    font-weight: bold;
-    font-size: 3.5vw;
-    color: rgb(212, 212, 212);
-  }
-  
-  
-  .cardBox {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    place-items: center;
-    overflow: hidden;
-    margin-top: 3%;
-    border-radius: 10px;
-    box-shadow: 4px 8px 8px  rgba(190, 235, 243, 0.692);
-    
-  }
-  
-  #about-me-container {
-    opacity: 0; /* initial opacity */
-    transition: opacity 5s; /* transition duration */
-   }
-  
-  #about-me-container.fade-in {
-    opacity: 1; /* final opacity */
-  }
-  .card {
-    position: absolute;
-    width: 300px;
-    height: 300px;  
-    
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
-  
-    cursor: pointer;
-  
-  }
-  
-  .PGAV{
-    background-image:url('/assets/SelfIntro/PGAVFull.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-  }
-  .PGAV:hover{
-    background-image: none;
-     background-color: rgba(247, 246, 246, 0.932);
-  }
-  .Cafe{
-    background-image:url('/assets/SelfIntro/MochaManiaCafe.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-  }
-  .Cafe:hover{
-    background-image: none;
-    background-color: rgba(247, 246, 246, 0.932);
-    
-  }
-  .cardBox:hover{
-    
-    box-shadow: 8px 10px 12px rgba(159, 201, 197, 0.822);
-  }
-  @media (max-width:346px) {
-    *{
-      overflow: hidden;
+    margin-bottom: 50px;
+
+    h6 {
+      color: #aaa;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
     }
-    .card{
-      margin-left: -5%;
-      height: 300px;
-   
+
+    h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      background: linear-gradient(90deg, #8ffdeb, #00ffd5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .card img{
-      width: 100px;
-      height:550px;
+
+    .line {
+      width: 120px;
+      height: 3px;
+      margin: 12px auto;
+      background: #00ffd5;
+      border-radius: 10px;
     }
-    
-   
-  }
-  
-  .card img {
-    
-    vertical-align: middle;
-    margin-top: 6%;
-  }
-  .p{
-    text-align: center;
-    font-family: "Baloo Paaji", cursive;
-    color: rgb(190, 190, 190);
-    font-size:  1.9vw;
-  }
-  .box>.cardBox>.card>.content>p{
-    text-align: justify;
-    font-family: "Baloo Paaji", cursive;
-    font-size: small;
-  }
-  .cardBox>.card>.content>p{
-    text-align: justify;
-    font-family: "Baloo Paaji", cursive;
-    font-size: small;
-  }
-  .margh5{
-  text-align: center;
-    color: whitesmoke;
-    margin-top: 2%;
-  }
-  .Health_PLUS{
-    background-image:url('/assets/SelfIntro/Health PLUS.jpeg');
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
-  .Health_PLUS:hover{
-    background-image: none;
-    background-color: rgba(247, 246, 246, 0.932);
-  
-  }
-  .margh5Mocha{
-    margin-left: 15%;
-    text-shadow: 0.07rem 0.07rem rgb(207, 207, 207);
-    color: white;
-    margin-top: 2%;
-  }
-  @media (max-width:992px) {
-    
-    .marg{
-      margin-left: 0;
-    }
-    .margh5Mocha{
-      margin-left: 0;
-      margin-top: 2%;
-    }
-    .margh5{
-      margin-left: 0;
-      margin-top: 2%;
-      text-align: left;
-      padding-left: 0;
-    }
-  }
-   h5{
-  
-          font-family: 'Baloo Paaji', cursive;
-          font-weight: 580;
-          padding: 2%;
-          // font-size: 1.5vw;
-          // text-align: center;
-          color: rgb(65, 65, 65);
-          font-size: 1.5vw;
-          text-shadow: 0.06rem 0.06rem #030303;
-          
-          
-  }
-  @media (max-width:560px) {
-    .card h5{
-  
-      margin-top: 0;
-      font-family: 'Baloo Paaji', cursive;
-      font-weight: 580;
-      padding: 2%;
-      font-size:3vw;
-      margin-left: 0;
-  }
-  
-  }
-  .card .content {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-  }
-  .card:hover{
-    
-    box-shadow: 0px 10px 12px rgba(20, 20, 20, 0.692);
-      
-  }
-  
-  .card:hover .content {
-    transform: translateY(0);
-    opacity: 1;
-    
-  }
-  
-  .card:hover h5,
-  .card:hover img {
-    display: none;
-  }
-  h6{
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Baloo Paaji', cursive;
-  }
-  .RestAPI{
-    
-    background-image:url('/assets/SelfIntro/EmployeeManagementRestAPI.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
-  .RestAPI:hover{
-    background-image: none;  
-    background-color:  rgba(247, 246, 246, 0.932);
-  
-  }
-  .Sports{
-    background-image: url('/assets/SelfIntro/Sports Activity Recognition System.png');
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
-  .Sports:hover{
-    background-image: none;  
-    background-color: rgba(247, 246, 246, 0.932);
-  }
-  .Expense{
-    background-image: url('/assets/SelfIntro/ExpenseManager.jpeg');
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
-  .Expense:hover{
-    background-image: none;  
-    background-color: rgba(247, 246, 246, 0.932);
-  }
-  .bg{
-    background-color:  linear-gradient(45deg, rgb(212, 244, 255), rgb(43, 42, 42));
-    box-shadow: 0 8px 12px 8px  rgba(130, 130, 131, 0.637);
-    border-radius: 15px;
-    margin-bottom: 2%;
-    margin-top: 2%;
   }
 
-  .btn{
-    // background-color: rgba(128, 128, 128, 0.329);
-    border-radius: 5px;
-    color: black;
-    border-left: 2px dashed #03a8f4;
-    border-top: 2px dashed #03a8f4;
-    box-shadow:  2px 2px #03a8f4;
-    font-weight: bold;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.fade-in {
+      opacity: 1;
+    }
   }
-  .btn:hover{
-    background-color: #03d0f4;
-    box-shadow:  4px 4px #03a8f4;
-    border: none;
-    font-weight: bolder;
-    color: black;
-  }
-  @media (max-width:991px)and (min-width:600px) {
-    h2 {
-      font-size: 5vw;
+
+  .project-card {
+    position: relative;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(0, 229, 255, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+
+    &:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 30px rgba(0, 229, 255, 0.5);
+
+      .card-content {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
-    h6{
-      font-size: 4vw;
-    }
-    .btn1{
-      font-size: 3vw;
-    }
-    .p{
-      font-size: 4vw;
-    }
-    i{
-      font-size: 5vw;
-    }
-    .h5{
-      font-size: 4vw;
+
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all 0.5s ease-in-out;
+
+      h5 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+
+        span {
+          color: #00ffd5;
+        }
+      }
+
+      p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+
+      .btn {
+        border: 1px solid #00ffd5;
+        background: transparent;
+        color: #00ffd5;
+        border-radius: 25px;
+        padding: 6px 18px;
+        font-weight: 600;
+        transition: 0.3s;
+
+        &:hover {
+          background: #00ffd5;
+          color: #000;
+          box-shadow: 0 0 10px #00ffd5;
+        }
+      }
     }
   }
-  @media (max-width:600px) {
-  h2 {
-   
-    font-size: 10vw;
+
+  /* Project Backgrounds */
+  .PGAV {
+    background-image: url('/assets/SelfIntro/PGAVFull.png');
   }
-  .h5{
-    font-size: 6vw;
-    text-align: center;
+
+  .Health_PLUS {
+    background-image: url('/assets/SelfIntro/Health PLUS.jpeg');
   }
-  h6{
-    font-size: 6vw;
+
+  .Cafe {
+    background-image: url('/assets/SelfIntro/MochaManiaCafe.png');
   }
-  .p{
-    font-size: 5vw;
+
+  .TutorologyLMS {
+    background-image: url('/assets/SelfIntro/tutorologyLMS.png');
   }
-  i{
-    font-size: 7vw;
+  .TutorologySite {
+    background-image: url('/assets/SelfIntro/tutorologyOfficial SIte.png');
   }
+  .RestAPI {
+    background-image: url('/assets/SelfIntro/EmployeeManagementRestAPI.png');
   }
+
+  .Sports {
+    background-image: url('/assets/SelfIntro/Sports Activity Recognition System.png');
+  }
+
+  .Expense {
+    background-image: url('/assets/SelfIntro/ExpenseManager.jpeg');
+  }
+
+  .budget_buddy {
+    background-image: url('/assets/SelfIntro/budget-buddy.png')
+  }
+
+  .project-card:hover {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    height: 320px;
+  }
+
+  .card-content h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.8rem;
+  }
+}

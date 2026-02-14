@@ -1,163 +1,128 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg">
-      <p class="p">What projects have I worked on?</p>
-      <h2>Projects</h2>
-      <hr
-        style="
-          margin-left: 36%;
-          justify-content: center;
-          border: 2pt rgb(4, 152, 201) solid;
-          width: 30%;
-        "
-      />
+<!-- HERO SECTION -->
+<section class="bb-hero">
+    <button class="bb-back-btn" (click)="goBack()">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+    <div class="bb-overlay">
+        <h1>Cafe Mocha Mania</h1>
+        <p class="tagline">Interactive Café Website & Digital Ordering Platform</p>
+
+        <div class="bb-tags">
+            <span>Angular</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Frontend</span>
+            <span>Agile</span>
+        </div>
+
+        <div class="bb-actions">
+            <a class="bb-btn primary" target="_blank" rel="noopener noreferrer" href="https://mocha-mania-cafe.onrender.com">
+                <i class="fas fa-globe"></i> Live Website
+            </a>
+            <a class="bb-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Manan-2001/Mocha-Mania-Cafe">
+                <i class="fab fa-github"></i> Source Code
+            </a>
+        </div>
     </div>
-  </div>
-  <br />
-  <br />
-  <div class="container content">
-    <h4 style="font-family: 'Baloo Paaji', cursive; ">
-      Mocha
-      <span
-        style="color: rgb(252, 36, 36); text-shadow: 2px 2px rgb(252, 36, 36)"
-        >Mania</span
-      >
-      Cafe
-    </h4>
-    <br />
-    <div class="row">
-      <div class="col-lg-5">
-        <hr
-          style="
-            font-weight: bold;
-            font-size: 1vw;
-            color: white;
-            border: 1px solid white;
-          "
-        />
-      </div>
-      <div class="col-lg-1">
-        <h1
-          style="
-            font-weight: bold;
-            font-size: 1.5vw;
-            text-align: center;
-            color: white;
-          "
-        >
-          X
-        </h1>
-      </div>
-      <div class="col-lg-5">
-        <hr
-          style="
-            font-weight: bold;
-            font-size: 1vw;
-            text-align: center;
-            color: white;
-            border: 1px solid white;
-          "
-        />
-      </div>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="bb-container">
+
+    <!-- Overview -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-circle-info"></i> Project Overview</h2>
+        <p>
+            Cafe Mocha Mania is a frontend web application designed to provide a digital café experience
+            where users can explore the menu, view café details, and place interactive orders.
+            The platform transforms a traditional café concept into a modern digital interface.
+        </p>
     </div>
-    <br />
-    <a routerLink=""
-      ><button class="btn btn1" type="submit" style="float: right">
-        <i class="fa fa-mail-reply-all"></i></button
-    ></a>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center">
-        <video
-          src="/assets/SelfIntro/Cafe_Mocha_Mania.mp4"
-          autoplay
-          controls
-        ></video>
-      </div>
+
+    <!-- Problem + Solution -->
+    <div class="bb-grid">
+        <div class="bb-card neon">
+            <h3><i class="fas fa-triangle-exclamation"></i> Problem</h3>
+            <ul>
+                <li>No digital café presence</li>
+                <li>Static menu systems</li>
+                <li>Poor user interaction</li>
+                <li>No online ordering experience</li>
+            </ul>
+        </div>
+
+        <div class="bb-card neon">
+            <h3><i class="fas fa-lightbulb"></i> Solution</h3>
+            <ul>
+                <li>Interactive digital café platform</li>
+                <li>Dynamic menu system</li>
+                <li>Online order interface</li>
+                <li>Modern user experience</li>
+            </ul>
+        </div>
     </div>
-    <br />
-    <div class="row">
-      <div
-        class="col-lg-12 col-md-12 col-sm-12"
-        style="
-          padding: 2%;
-          color: white;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          text-align: justify;
-        "
-      >
-        <a href="https://github.com/Manan-2001/Mocha-Mania-Cafe" target="_blank"
-          ><button class="btn btn1">
-            GitHub<i class="fa fa-github-square"></i></button></a
-        > <a href="https://mocha-mania-cafe.onrender.com" target="_blank" style="margin-left: 1%;"
-        ><button class="btn btn1">
-          Website<i class="fa fa-chrome"></i></button></a
-      ><br /><br />
-        <p class="cp">
-          During my <strong>personal project</strong>, I developed a web application for an
-          imaginary café called <strong>Cafe Mocha Mania</strong>. The aim was to create a
-          dynamic and visually appealing platform where users could explore the
-          <strong>menu</strong>, <strong>place orders</strong>, and learn more about the café. This project was
-          built using <strong>Angular</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>TypeScript</strong>, and <strong>JavaScript.</strong>
-        </p>
-        <p class="cp">
-          One of the key features I implemented was a comprehensive and
-          interactive menu display using Angular. Users can view detailed
-          descriptions and images of various café items, including beverages,
-          snacks, and desserts. I also developed an intuitive order placement
-          system that allows users to select items, customize their orders, and
-          add them to the cart. This system includes features such as quantity
-          adjustment, special instructions, and real-time price calculation.
-        </p>
-        <p class="cp">
-          To enhance user interaction and engagement, I used JavaScript and
-          TypeScript to create smooth transitions, modals for detailed item
-          views, and dynamic updates without reloading the page. Additionally, I
-          created an "About Us" section detailing the story, values, and
-          ambiance of Cafe Mocha Mania, designed to engage visitors and give
-          them a sense of the café's atmosphere.
-        </p>
-        <p class="cp">
-          The frontend development process involved using Angular to structure
-          the application into reusable components, making the codebase modular
-          and maintainable. I leveraged HTML for content structure and CSS along
-          with Bootstrap for styling, ensuring a cohesive and attractive visual
-          design. I implemented TypeScript and JavaScript to handle user
-          interactions, such as menu item selection, cart updates, and form
-          submissions.
-        </p>
-        <p class="cp">
-          Throughout the project, I conducted extensive testing to ensure all
-          features functioned correctly and the application performed well under
-          various conditions. I also optimized the code and assets for faster
-          load times and better performance.
-        </p>
-        <p class="cp">
-          The web application is deployed on Render cloud and can be accessed at
-          <a href="https://mocha-mania-cafe.onrender.com" target="_blank" style="color: rgb(3, 192, 255);">Cafe Mocha Mania</a>. <br />
-        </p>
-        <p class="cp">
-          The Cafe Mocha Mania web application successfully combines
-          functionality with an engaging user experience, showcasing my skills
-          in frontend development and web design. This project highlights my
-          ability to use modern web technologies to create interactive and
-          responsive web applications. I gained deeper insights into Angular and
-          its application in building complex web interfaces, enhanced my
-          proficiency in HTML, CSS, Bootstrap, JavaScript, and TypeScript, and
-          learned effective techniques for optimizing web applications for
-          performance. This project also improved my ability to manage a
-          personal project from conception to completion, including planning,
-          development, testing, and deployment.
-        </p>
-      </div>
-    </div>
-    <hr />
-    <a routerLink=""
-      ><button class="btn btn1" type="submit" style="float: right">
-        <i class="fa fa-mail-reply-all"></i></button
-    ></a>
-    
-  </div>
-  <br>
-  <br>
+    <!-- Development Methodology -->
+<div class="bb-card glass">
+    <h2><i class="fas fa-diagram-project"></i> Development Methodology</h2>
+    <p>
+        Cafe Mocha Mania was developed using a structured, component-driven development approach
+        focused on iterative UI enhancement, performance optimization, and user experience design.
+    </p>
+
+    <ul>
+        <li>Component-based development</li>
+        <li>Iterative UI/UX improvements</li>
+        <li>Feature-wise implementation</li>
+        <li>Responsive-first design approach</li>
+        <li>Progressive enhancement model</li>
+        <li>Phase-wise feature delivery</li>
+    </ul>
 </div>
 
+    <!-- Features -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-gears"></i> Core Features</h2>
+        <div class="feature-grid">
+            <div><i class="fas fa-mug-hot"></i> Digital Menu</div>
+            <div><i class="fas fa-cart-shopping"></i> Order System</div>
+            <div><i class="fas fa-images"></i> Item Gallery</div>
+            <div><i class="fas fa-receipt"></i> Cart Management</div>
+            <div><i class="fas fa-sliders"></i> Custom Orders</div>
+            <div><i class="fas fa-bolt"></i> Real-time Pricing</div>
+            <div><i class="fas fa-building"></i> About Café</div>
+            <div><i class="fas fa-mobile-screen"></i> Responsive Design</div>
+        </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="bb-card glass">
+        <h2><i class="fas fa-diagram-project"></i> System Architecture</h2>
+        <div class="flow">
+            User → Angular UI → Components → Services → State → UI → User
+        </div>
+    </div>
+
+    <!-- Role -->
+    <div class="bb-card neon">
+        <h2><i class="fas fa-user-gear"></i> My Role</h2>
+        <p>
+            I designed and developed the complete Cafe Mocha Mania application including UI design,
+            Angular component architecture, interactive order system, responsive layouts,
+            performance optimization, testing, and deployment on cloud hosting.
+        </p>
+    </div>
+
+    <!-- Future -->
+    <div class="bb-card glow">
+        <h2><i class="fas fa-rocket"></i> Future Scope</h2>
+        <div class="future-grid">
+            <span><i class="fas fa-qrcode"></i> QR Ordering System</span>
+            <span><i class="fas fa-credit-card"></i> Online Payments</span>
+            <span><i class="fas fa-user-group"></i> User Accounts</span>
+            <span><i class="fas fa-store"></i> Admin Dashboard</span>
+        </div>
+    </div>
+
+</section>

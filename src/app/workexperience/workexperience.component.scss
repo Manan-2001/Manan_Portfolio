@@ -1,303 +1,161 @@
-h2 {
-    text-align: center;
-    font-family: "Baloo Paaji", cursive;
-    font-weight: bold;
-    font-size: 2.5vw;
-  
-    color: rgb(212, 212, 212);
+.work-experience {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 80px 0;
+  background: transparent;
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-weight: 700;
+  background: linear-gradient(90deg, #8ffdeb, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.section-header h6 {
+  color: rgb(190, 190, 190);
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.section-header .line {
+  width: 120px;
+  height: 3px;
+  margin: 12px auto;
+  background: #00ffd5;
+  border-radius: 10px;
+}
+
+/* Timeline layout */
+.timeline-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 32px;
+  width: 4px;
+  background: #1a4941;
+  border-radius: 10px;
+}
+
+/* Item */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Icon */
+.timeline-icon {
+  min-width: 64px;
+  height: 64px;
+  background: #1a4941;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  z-index: 2;
+}
+
+/* Card */
+.timeline-card {
+  background: #1a4941;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.timeline-item:nth-child(even) .timeline-card {
+  background: 1a4941;
+}
+
+.timeline-card h3 {
+  margin: 0 0 6px 0;
+}
+
+.timeline-card h4 {
+  margin: 8px 0 12px 0;
+  font-weight: 500;
+}
+
+.timeline-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.timeline-card li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Date */
+.date {
+  font-size: 13px;
+  color: #bfc3c7;
+  margin-bottom: 6px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .work-experience{
+    padding: 0;
   }
-  
-  h6 {
-    text-align: center;
-    font-family: "Baloo Paaji", cursive;
+  .timeline::before {
+    display: none;
   }
 
-  .row {
-    width: 980px;
-    height: 100%;
-    max-width: 100%;
+  .timeline-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .timeline-icon {
     margin: 0 auto;
   }
-  .fullWidth {
-    width: 85%;
-    display: table;
-    padding: 0;
-    min-height: 1px;
-    height: 85%;
-  }
-  .cbp_tmtimeline {
-    margin: 60px 30px 0 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-  }
 
-  .cbp_tmtimeline:before {
-    content: "";
-    position: absolute;
-    top: 3%;
-    bottom: 0;
-    width: 10px;
-    background: #324454;
-    left: 13%;
-    height: 100%;
-  }
-
-  .cbp_tmtimeline li:last-child:before {
-    content: initial;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmtime {
-    display: block;
-    width: 25%;
-    padding-right: 100px;
-    position: absolute;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmtime span {
-    display: block;
-    text-align: right;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmtime span:first-child {
-    font-size: 0.9em;
-    color: #bdd0db;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
-    color: #3594cb;
-  }
-
-  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-    color: #6cbfee;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmlabel {
-    margin: 0 0 15px 25%;
-    background: rgba(50, 68, 84, 1);
-    color: #fff;
-    padding: 30px;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    position: relative;
-    border-radius: 5px;
-    min-height: 150px;
-  }
-
-  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-    background: #2b3a48;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmlabel h3 {
-    margin-top: 0px;
-    color: white;
-    font-size: 17px;
-    margin-bottom: 5px;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmlabel h4 {
-    opacity: 0.7;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 0px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 15px;
-    line-height: 1.2em;
-    font-weight: 600;
-    padding: 0;
-    padding-bottom: 10px;
-    margin: 0;
+  .timeline-card {
     text-align: left;
+    padding: 18px;
   }
 
-  .cbp_tmtimeline > li .cbp_tmlabel h4 i {
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmlabel:after {
-    right: 100%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-right-color: rgba(50, 68, 84, 1);
-    border-width: 10px;
-    top: 70px;
-  }
-
-  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: #2b3a48;
-  }
-
-  .cbp_tmtimeline > li .cbp_tmicon {
-    width: 150px;
-    height: 150px;
-    top: 3%;
-    speak: none;
-
-    font-size: 1.4em;
-    line-height: 40px;
-    -webkit-font-smoothing: antialiased;
-    position: absolute;
-    color: #151515;
-    background: #324454;
-    border-radius: 50%;
-    text-align: center;
-    left: 8%;
-    margin: 0 0 0 -25px;
-  }
-
-  .cbp_tmtimeline li {
-    margin-bottom: 70px;
-    position: relative;
-  }
-
-  .projectParagraph {
-    font-size: 17px;
-    margin: 0.5em 0 0;
-    font-family: "Source Sans Pro", serif;
-  }
-  .faPra {
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: 48px;
-    color: white;
-    line-height: 150px;
-  }
-
-  .date {
-    color: #bfc3c7;
-    display: block;
+  .timeline-card li {
     font-size: 14px;
-    font-weight: 600;
-    position: absolute;
-    top: 30px;
-    right: 20px;
   }
 
-  .date i {
-    margin-right: 8px;
-    vertical-align: top;
-    font-size: 18px;
-    line-height: 20px;
+  .section-header h2 {
+    font-size: 8vw;
   }
 
-  @media (max-width: 1024px) {
-    .cbp_tmtimeline:before {
-      display: none;
-    }
-    .cbp_tmtimeline > li .cbp_tmtime {
-      width: 100%;
-      position: relative;
-      padding: 0 0 20px 0;
-    }
-    .cbp_tmtimeline > li .cbp_tmtime span {
-      text-align: left;
-    }
-    .cbp_tmtimeline > li .cbp_tmlabel {
-      margin: 30px 0 70px 0;
-      padding: 50px 30px 30px 30px;
-      font-weight: 400;
-      font-size: 95%;
-      float: left;
-    }
-    .cbp_tmtimeline > li .cbp_tmlabel:after {
-      right: auto;
-      border-right-color: transparent;
-      border-bottom-color: rgb(50, 68, 84);
-      top: -20px;
-    }
-    .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-      border-right-color: transparent;
-      border-bottom-color: rgb(43, 58, 72);
-      left: 65px;
-    }
-    .cbp_tmtimeline > li:nth-child(even) .cbp_tmlabel:after {
-      right: 65px;
-    }
-    .cbp_tmtimeline > li:nth-child(odd) .cbp_tmicon {
-      position: relative;
-      float: left;
-      left: auto;
-      margin: 0px 5px 0 0px;
-    }
-    .cbp_tmtimeline > li:nth-child(even) .cbp_tmicon {
-      position: relative;
-      float: right;
-      left: auto;
-      margin: 0px 5px 0 0px;
-    }
-    .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-      font-size: 1.5em;
-    }
-  }
-
-
-
-  @keyframes floatFromRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .float-right-to-left {
-    animation: floatFromRight 1s ease-out;
-  }
-  @media (max-width:991px)and (min-width:600px) {
-    h2 {
-      font-size: 5vw;
-    }
-    h6{
-      font-size: 4vw;
-    }
-    .btn1{
-      font-size: 3vw;
-    }
-    .p{
-      font-size: 4vw;
-    }
-    i{
-      font-size: 5vw;
-    }
-    .projectParagraph{
-      font-size: 4vw;
-    }
-    .cbp_tmtimeline > li .cbp_tmlabel h3{
-      font-size: 4vw;
-    }
-}
-@media (max-width:600px) {
-  h2 {
-   
-    font-size: 10vw;
-  }
-  .cbp_tmtimeline > li .cbp_tmlabel h3{
-    font-size: 5vw;
-  }
-  h6{
-    font-size: 6vw;
-  }
-  .btn1{
-    font-size: 4vw;
-  }
-  .p{
-    font-size: 5vw;
-  }
-  i{
-    font-size: 7vw;
-  }
-  .projectParagraph{
-    font-size: 5vw;
+  .section-header h6 {
+    font-size: 4.5vw;
   }
 }
